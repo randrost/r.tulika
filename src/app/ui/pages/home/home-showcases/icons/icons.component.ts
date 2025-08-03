@@ -1,6 +1,6 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MediaObserver, MediaChange } from '@angular/flex-layout';
+import { MediaObserver, MediaChange } from 'ng-flex-layout';
 import { FormBuilder } from '@angular/forms';
 import { takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable, ReplaySubject } from 'rxjs';
 import { TRANSITION_TEXT, TRANSITION_IMAGE_SCALE } from 'src/app/ui/animations/transitions/transitions.constants';
@@ -105,7 +105,7 @@ export class IconsComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {

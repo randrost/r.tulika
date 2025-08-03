@@ -6,7 +6,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 import { WidgetWaterfallModule } from '../widgets/widget-waterfall/widget-waterfall.module';
-import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/legacy-dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { SharedModule } from '../@shared/shared.module';
 
 

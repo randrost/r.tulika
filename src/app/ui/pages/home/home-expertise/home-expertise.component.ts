@@ -1,6 +1,6 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
+import { MediaObserver } from 'ng-flex-layout';
 import { ReplaySubject, takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable } from 'rxjs';
 import { TRANSITION_IMAGE_SCALE, TRANSITION_TEXT } from 'src/app/ui/animations/transitions/transitions.constants';
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
@@ -72,7 +72,7 @@ export class HomeExpertiseComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {
@@ -206,7 +206,7 @@ export class HomeExpertiseComponent implements OnInit {
 
     // web
 
-    
+
 
     {
       "id": "8102",

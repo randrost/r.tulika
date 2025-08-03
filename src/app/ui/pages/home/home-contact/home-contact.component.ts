@@ -1,8 +1,8 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
+import { MediaObserver } from 'ng-flex-layout';
 import { FormArray, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
-import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef } from '@angular/material/legacy-dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { ReplaySubject, takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable } from 'rxjs';
 import { ParamPostContact } from 'src/app/api/params/contact-param';
@@ -50,7 +50,7 @@ export class HomeContactComponent implements OnInit {
 
   @ViewChild("formDirective", { static: true }) private formDirective?: NgForm;
 
-  
+
 
   constructor(public el: ElementRef,
     private _ngZone: NgZone,
@@ -94,7 +94,7 @@ export class HomeContactComponent implements OnInit {
 
   _onSubmit(): void {
     this._mInProgress = true;
- 
+
     this.openProgress();
     const value = this._mFormGroup.getRawValue();
     // value.fromUrl = this.previousRoute;
@@ -102,7 +102,7 @@ export class HomeContactComponent implements OnInit {
     // console.log("onSubmit Contact: ", value);
     setTimeout(() => {
       // console.log("sd");
-      
+
       this.recaptchaV3Service.execute("importantAction").subscribe(token => {
         this._resolvedCaptcha(token, value);
         // this.addContact(value);
@@ -117,12 +117,12 @@ export class HomeContactComponent implements OnInit {
     value.token= token;
 
     if (token) {
-   
+
       time = new Date().valueOf();
       // console.log("time2: ", time);
       console.log("value from resolved:", token);
       this.addContact(value);
-      
+
     } else {
       this.closeProgress();
     }
@@ -130,7 +130,7 @@ export class HomeContactComponent implements OnInit {
   }
 
   addContact(data: ParamPostContact) {
-    
+
     this.apiContactService.add(data).subscribe({
       next :  (res: ParamPostContact) => {
           // console.log("contact res is: ", res);
@@ -161,7 +161,7 @@ export class HomeContactComponent implements OnInit {
     //   this._mFormGroup.get("buildRequirements")
     // )) as FormArray;
     // buildRequirements.clear();
-   
+
 
     // this._mInputLabelImage = null;
     // this.updateLabelActive();
@@ -194,7 +194,7 @@ export class HomeContactComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {

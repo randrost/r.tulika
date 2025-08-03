@@ -1,6 +1,6 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
+import { MediaObserver } from 'ng-flex-layout';
 import { takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable, ReplaySubject } from 'rxjs';
 import { ENTER_SCALE, TRANSITION_AREA_SLIDE, TRANSITION_IMAGE_SCALE, TRANSITION_TEXT } from 'src/app/ui/animations/transitions/transitions.constants';
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
@@ -19,7 +19,7 @@ import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 export class HomeAboutComponent implements OnInit {
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
   mOnceAnimated = false
- 
+
   /* ********************************************************************************************
   *                anims
   */
@@ -30,9 +30,9 @@ export class HomeAboutComponent implements OnInit {
 
   _mThreshold = 0.2
 
-  
+
   @ViewChild('animRefView') vAnimRefView?: ElementRef<HTMLElement>;
-  
+
   constructor(public el: ElementRef,
     private _ngZone: NgZone,
     private cdr: ChangeDetectorRef,
@@ -42,14 +42,14 @@ export class HomeAboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+
 
   ngAfterViewInit(): void {
     this.setupAnimation();
   }
 
   ngOnDestroy(): void {
-    
+
     this.destroyed$.next(true)
     this.destroyed$.complete()
   }
@@ -73,7 +73,7 @@ export class HomeAboutComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {

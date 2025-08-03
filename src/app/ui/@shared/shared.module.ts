@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from 'ng-flex-layout';
 import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from "@angular/material/icon";
 // import { FooterModule } from '../common/footer/footer.module';

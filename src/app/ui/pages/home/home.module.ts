@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
-import { MatLegacySliderModule as MatSliderModule } from '@angular/material/legacy-slider';
-import {  MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
+import { MatSliderModule } from '@angular/material/slider';
+import {  MatButtonModule } from '@angular/material/button';
 import { SharedModule } from '../../@shared/shared.module';
 import { HomeTopComponent } from './home-top/home-top.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
@@ -15,8 +15,8 @@ import { HomeExpertiseComponent } from './home-expertise/home-expertise.componen
 import { ExpertiseItemComponent } from './home-expertise/expertise-item/expertise-item.component';
 import { TechItemComponent } from './home-expertise/tech-item/tech-item.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
-import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HomeShowcasesComponent } from './home-showcases/home-showcases.component';
 import { AppItemComponent } from './home-showcases/app-item/app-item.component';

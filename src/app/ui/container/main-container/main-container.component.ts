@@ -1,6 +1,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { fromEvent, Subscription } from 'rxjs';
 import { ScrollEventService } from 'src/app/core/scroll/scroll-event.service';
 import { ENTER_FORM_TOP } from '../../animations/transitions/transitions.constants';

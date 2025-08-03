@@ -1,6 +1,6 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
+import { MediaObserver } from 'ng-flex-layout';
 import { takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable, ReplaySubject } from 'rxjs';
 import { TRANSITION_REVEAL } from '../../animations/transitions/transitions.constants';
 import { UiUtilsView } from '../../utils/views.utils';
@@ -22,10 +22,10 @@ export class FooterComponent implements OnInit {
 
 
 
-  
+
   mOnceAnimated = false
   _mTriggerAnim?= 'false'
-  
+
   @ViewChild('animRefView') vAnimRefView?: ElementRef<HTMLElement>;
 
   constructor(private _ngZone: NgZone,
@@ -39,7 +39,7 @@ export class FooterComponent implements OnInit {
   ngAfterViewInit(): void {
     //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
     //Add 'implements AfterViewInit' to the class.
-   
+
 
     // this.vImageArea.
     // console.log("app-item scrollContainers: ", this.scroll.scrollContainers);
@@ -70,7 +70,7 @@ export class FooterComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {

@@ -1,6 +1,6 @@
 import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
+import { MediaObserver } from 'ng-flex-layout';
 import { ENTER_SCALE, TRANSITION_TEXT, TRANSITION_TEXT_ENTER } from 'src/app/ui/animations/transitions/transitions.constants';
 
 @Component({
@@ -33,7 +33,7 @@ export class HomeTopComponent implements OnInit {
       // console.log("_onTextAnimationEnd")
       this._mAnimTextEnded = true
       // this.animAnimation()
-      
+
     }
   }
 
