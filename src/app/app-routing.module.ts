@@ -17,19 +17,6 @@ const routes: Routes = [
     ]
 
   },
-
-  {
-    path: 'documents',
-    component: EmptyContainerComponent,
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          import('./ui/pages/documents/document.module').then((m) => m.DocumentModule),
-      }
-    ]
-
-  },
 ];
 
 @NgModule({
