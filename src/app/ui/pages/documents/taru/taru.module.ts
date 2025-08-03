@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 // import { DeletionComponent } from './deletion/deletion.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { TaruPrivacyComponent } from './taru-privacy/taru-privacy.component';
 
 const routes =RouterModule.forChild( [

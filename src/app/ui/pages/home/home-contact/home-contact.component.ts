@@ -2,7 +2,7 @@ import { ScrollDispatcher, ViewportRuler } from '@angular/cdk/scrolling';
 import { ChangeDetectorRef, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 import { FormArray, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef } from '@angular/material/legacy-dialog';
 import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { ReplaySubject, takeUntil, startWith, map, scan, distinctUntilChanged, takeWhile, switchMap, Observable } from 'rxjs';
 import { ParamPostContact } from 'src/app/api/params/contact-param';

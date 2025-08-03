@@ -15,8 +15,8 @@
     palette.$current-color-angular-webapp-warn,
     func.mat-theme-foreground($tb-theme-primary)
   );
-  @include mat.button-theme($current-priamry-theme);
-  @include mat.progress-spinner-theme($current-priamry-theme);
+  @include mat.legacy-button-theme($current-priamry-theme);
+  @include mat.legacy-progress-spinner-theme($current-priamry-theme);
 }
 
 .current-secondary {
@@ -26,8 +26,8 @@
     palette.$current-color-angular-webapp-warn,
     func.mat-theme-foreground($tb-theme-secondary)
   );
-  @include mat.button-theme($current-secondary-theme);
-  @include mat.progress-spinner-theme($current-secondary-theme);
+  @include mat.legacy-button-theme($current-secondary-theme);
+  @include mat.legacy-progress-spinner-theme($current-secondary-theme);
 }
 
 .junkie{
