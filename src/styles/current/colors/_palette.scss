@@ -186,8 +186,8 @@ $current-color-primary: $current-color-black;
 
 $current-color-secondary: $current-color-green;
 
-$current-color-angular-webapp-primary: mat.define-palette($current-color-primary, $default: 700, $lighter: 100, $darker: 900);
-$current-color-angular-webapp-accent: mat.define-palette($current-color-secondary, A200, A100, A400);
+$current-color-angular-webapp-primary: mat.m2-define-palette($current-color-primary, $default: 700, $lighter: 100, $darker: 900);
+$current-color-angular-webapp-accent: mat.m2-define-palette($current-color-secondary, A200, A100, A400);
 
 
-$current-color-angular-webapp-warn: mat.define-palette(mat.$red-palette);
+$current-color-angular-webapp-warn: mat.m2-define-palette(mat.$m2-red-palette);
