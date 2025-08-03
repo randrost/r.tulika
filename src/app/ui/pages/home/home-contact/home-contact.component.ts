@@ -14,13 +14,14 @@ import { DialogSuccessComponent } from 'src/app/ui/common/success/dialog-success
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-home-contact',
-  templateUrl: './home-contact.component.html',
-  styleUrls: ['./home-contact.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-home-contact',
+    templateUrl: './home-contact.component.html',
+    styleUrls: ['./home-contact.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class HomeContactComponent implements OnInit {
 

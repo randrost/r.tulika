@@ -8,13 +8,14 @@ import { TRANSITION_IMAGE_SCALE, TRANSITION_TEXT } from 'src/app/ui/animations/t
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-my-apps',
-  templateUrl: './my-apps.component.html',
-  styleUrls: ['./my-apps.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-my-apps',
+    templateUrl: './my-apps.component.html',
+    styleUrls: ['./my-apps.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class MyAppsComponent implements OnInit {
 

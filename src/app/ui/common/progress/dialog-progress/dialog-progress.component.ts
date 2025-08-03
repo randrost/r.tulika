@@ -3,9 +3,10 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogModelProgress } from '../model';
 
 @Component({
-  selector: 'app-dialog-progress',
-  templateUrl: './dialog-progress.component.html',
-  styleUrls: ['./dialog-progress.component.scss']
+    selector: 'app-dialog-progress',
+    templateUrl: './dialog-progress.component.html',
+    styleUrls: ['./dialog-progress.component.scss'],
+    standalone: false
 })
 export class DialogProgressComponent implements OnInit {
   constructor(

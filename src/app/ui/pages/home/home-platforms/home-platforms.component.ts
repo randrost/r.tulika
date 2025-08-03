@@ -6,12 +6,13 @@ import { TRANSITION_TEXT } from 'src/app/ui/animations/transitions/transitions.c
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-home-platforms',
-  templateUrl: './home-platforms.component.html',
-  styleUrls: ['./home-platforms.component.scss'],
-  animations: [
-    TRANSITION_TEXT
-  ]
+    selector: 'app-home-platforms',
+    templateUrl: './home-platforms.component.html',
+    styleUrls: ['./home-platforms.component.scss'],
+    animations: [
+        TRANSITION_TEXT
+    ],
+    standalone: false
 })
 export class HomePlatformsComponent implements OnInit {
 

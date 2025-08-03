@@ -3,9 +3,10 @@ import { AppType } from 'src/app/types/apps_type';
 import { UiUtilsColor } from 'src/app/ui/utils/color.utils';
 
 @Component({
-  selector: 'app-myapp-item',
-  templateUrl: './myapp-item.component.html',
-  styleUrls: ['./myapp-item.component.scss']
+    selector: 'app-myapp-item',
+    templateUrl: './myapp-item.component.html',
+    styleUrls: ['./myapp-item.component.scss'],
+    standalone: false
 })
 export class MyappItemComponent implements OnInit {
   

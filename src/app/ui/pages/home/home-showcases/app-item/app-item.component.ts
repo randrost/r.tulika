@@ -2,9 +2,10 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { UiUtilsColor } from 'src/app/ui/utils/color.utils';
 
 @Component({
-  selector: 'app-app-item',
-  templateUrl: './app-item.component.html',
-  styleUrls: ['./app-item.component.scss']
+    selector: 'app-app-item',
+    templateUrl: './app-item.component.html',
+    styleUrls: ['./app-item.component.scss'],
+    standalone: false
 })
 export class AppItemComponent implements OnInit {
 

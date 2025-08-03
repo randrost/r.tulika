@@ -6,15 +6,16 @@ import { ENTER_SCALE, TRANSITION_AREA_SLIDE, TRANSITION_IMAGE_SCALE, TRANSITION_
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-home-about',
-  templateUrl: './home-about.component.html',
-  styleUrls: ['./home-about.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_AREA_SLIDE,
-    TRANSITION_IMAGE_SCALE,
-    ENTER_SCALE
-  ]
+    selector: 'app-home-about',
+    templateUrl: './home-about.component.html',
+    styleUrls: ['./home-about.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_AREA_SLIDE,
+        TRANSITION_IMAGE_SCALE,
+        ENTER_SCALE
+    ],
+    standalone: false
 })
 export class HomeAboutComponent implements OnInit {
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);

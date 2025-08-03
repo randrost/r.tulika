@@ -6,7 +6,8 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Subscription, filter, fromEvent } from 'rxjs';
 
 @Directive({
-  selector: '[appWidgetWaterfall]'
+    selector: '[appWidgetWaterfall]',
+    standalone: false
 })
 export class WidgetWaterfallDirective implements OnChanges, OnDestroy, AfterContentInit, AfterViewChecked {
 

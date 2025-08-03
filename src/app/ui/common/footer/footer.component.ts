@@ -6,12 +6,13 @@ import { TRANSITION_REVEAL } from '../../animations/transitions/transitions.cons
 import { UiUtilsView } from '../../utils/views.utils';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
-  animations:[
-    TRANSITION_REVEAL
-  ]
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss'],
+    animations: [
+        TRANSITION_REVEAL
+    ],
+    standalone: false
 })
 export class FooterComponent implements OnInit {
 

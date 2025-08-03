@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-expertise-item',
-  templateUrl: './expertise-item.component.html',
-  styleUrls: ['./expertise-item.component.scss']
+    selector: 'app-expertise-item',
+    templateUrl: './expertise-item.component.html',
+    styleUrls: ['./expertise-item.component.scss'],
+    standalone: false
 })
 export class ExpertiseItemComponent implements OnInit {
 

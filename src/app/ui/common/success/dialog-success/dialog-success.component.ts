@@ -2,9 +2,10 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-success',
-  templateUrl: './dialog-success.component.html',
-  styleUrls: ['./dialog-success.component.scss']
+    selector: 'app-dialog-success',
+    templateUrl: './dialog-success.component.html',
+    styleUrls: ['./dialog-success.component.scss'],
+    standalone: false
 })
 export class DialogSuccessComponent implements OnInit {
 

@@ -7,13 +7,14 @@ import { TRANSITION_TEXT, TRANSITION_IMAGE_SCALE } from 'src/app/ui/animations/t
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-home-showcases',
-  templateUrl: './home-showcases.component.html',
-  styleUrls: ['./home-showcases.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-home-showcases',
+    templateUrl: './home-showcases.component.html',
+    styleUrls: ['./home-showcases.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class HomeShowcasesComponent implements OnInit {
 

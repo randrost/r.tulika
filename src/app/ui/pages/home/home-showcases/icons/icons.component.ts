@@ -7,13 +7,14 @@ import { TRANSITION_TEXT, TRANSITION_IMAGE_SCALE } from 'src/app/ui/animations/t
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-icons',
-  templateUrl: './icons.component.html',
-  styleUrls: ['./icons.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-icons',
+    templateUrl: './icons.component.html',
+    styleUrls: ['./icons.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class IconsComponent implements OnInit {
   readonly ICONS_2: string = "assets/img/icons/icon_set_2.png"

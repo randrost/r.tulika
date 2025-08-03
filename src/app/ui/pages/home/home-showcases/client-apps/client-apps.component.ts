@@ -7,13 +7,14 @@ import { TRANSITION_TEXT, TRANSITION_IMAGE_SCALE } from 'src/app/ui/animations/t
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-client-apps',
-  templateUrl: './client-apps.component.html',
-  styleUrls: ['./client-apps.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-client-apps',
+    templateUrl: './client-apps.component.html',
+    styleUrls: ['./client-apps.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class ClientAppsComponent implements OnInit {
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);

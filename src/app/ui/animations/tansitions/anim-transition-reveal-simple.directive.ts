@@ -1,7 +1,8 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appAnimTransitionRevealSimple]'
+    selector: '[appAnimTransitionRevealSimple]',
+    standalone: false
 })
 export class AnimTransitionRevealSimpleDirective {
 

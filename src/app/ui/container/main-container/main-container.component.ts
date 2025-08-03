@@ -6,12 +6,13 @@ import { ScrollEventService } from 'src/app/core/scroll/scroll-event.service';
 import { ENTER_FORM_TOP } from '../../animations/transitions/transitions.constants';
 
 @Component({
-  selector: 'app-main-container',
-  templateUrl: './main-container.component.html',
-  styleUrls: ['./main-container.component.scss'],
-  animations:[
-    ENTER_FORM_TOP
-  ]
+    selector: 'app-main-container',
+    templateUrl: './main-container.component.html',
+    styleUrls: ['./main-container.component.scss'],
+    animations: [
+        ENTER_FORM_TOP
+    ],
+    standalone: false
 })
 export class MainContainerComponent implements OnInit {
 

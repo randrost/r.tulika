@@ -6,13 +6,14 @@ import { TRANSITION_IMAGE_SCALE, TRANSITION_TEXT } from 'src/app/ui/animations/t
 import { UiUtilsView } from 'src/app/ui/utils/views.utils';
 
 @Component({
-  selector: 'app-home-expertise',
-  templateUrl: './home-expertise.component.html',
-  styleUrls: ['./home-expertise.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_IMAGE_SCALE
-  ]
+    selector: 'app-home-expertise',
+    templateUrl: './home-expertise.component.html',
+    styleUrls: ['./home-expertise.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_IMAGE_SCALE
+    ],
+    standalone: false
 })
 export class HomeExpertiseComponent implements OnInit {
 

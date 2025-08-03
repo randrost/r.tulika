@@ -4,16 +4,17 @@ import { MediaObserver } from 'ng-flex-layout';
 import { ENTER_SCALE, TRANSITION_TEXT, TRANSITION_TEXT_ENTER } from 'src/app/ui/animations/transitions/transitions.constants';
 
 @Component({
-  selector: 'app-home-top',
-  templateUrl: './home-top.component.html',
-  styleUrls: ['./home-top.component.scss'],
-  animations: [
-    TRANSITION_TEXT,
-    TRANSITION_TEXT_ENTER,
-    // TRANSITION_AREA_SLIDE,
-    // TRANSITION_IMAGE_SCALE,
-    ENTER_SCALE
-  ]
+    selector: 'app-home-top',
+    templateUrl: './home-top.component.html',
+    styleUrls: ['./home-top.component.scss'],
+    animations: [
+        TRANSITION_TEXT,
+        TRANSITION_TEXT_ENTER,
+        // TRANSITION_AREA_SLIDE,
+        // TRANSITION_IMAGE_SCALE,
+        ENTER_SCALE
+    ],
+    standalone: false
 })
 export class HomeTopComponent implements OnInit {
 
