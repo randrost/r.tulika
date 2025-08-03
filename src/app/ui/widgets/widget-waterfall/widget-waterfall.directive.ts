@@ -1,7 +1,7 @@
 import { Platform } from '@angular/cdk/platform';
-import { DOCUMENT } from '@angular/common';
+
 import { Location } from '@angular/common';
-import { AfterContentInit, AfterViewChecked, ChangeDetectorRef, Directive, ElementRef, Inject, Input, NgZone, OnChanges, OnDestroy, Renderer2, SimpleChanges } from '@angular/core';
+import { AfterContentInit, AfterViewChecked, ChangeDetectorRef, Directive, ElementRef, Inject, Input, NgZone, OnChanges, OnDestroy, Renderer2, SimpleChanges, DOCUMENT } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Subscription, filter, fromEvent } from 'rxjs';
 
