@@ -1,7 +1,9 @@
+@use 'sass:color';
+
 @function hexToCssRGB($hex) {
-    @return red($hex), green($hex), blue($hex);
+  @return color.channel($hex, "red"), color.channel($hex, "green"), color.channel($hex, "blue");
 }
 
 @function cssColor($color-name) {
-    @return var(--#{$color-name});
+  @return var(--#{$color-name});
 }

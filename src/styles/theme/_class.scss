@@ -1,8 +1,8 @@
 @use "./variables" as *;
-// @debug $pl-color-black-alpha-map;
+@use 'sass:color';
 
-@function hexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+@function hexToCssRGB($hex) {
+  @return color.channel($hex, "red"), color.channel($hex, "green"), color.channel($hex, "blue");
 }
 
 @each $colorKey in map-keys($tb-theme-map) {
@@ -22,11 +22,11 @@
   }
 }
 
-.tb-theme{
+.tb-theme {
   @each $colorKey in map-keys($tb-theme-map) {
 
     --tb-theme-#{$colorKey}: #{map-get($map: $tb-theme-map, $key: $colorKey)};
-    --tb-theme-#{$colorKey}--rgb: #{hexToRGB(map-get($map: $tb-theme-map, $key: $colorKey))};
+    --tb-theme-#{$colorKey}--rgb: #{hexToCssRGB(map-get($map: $tb-theme-map, $key: $colorKey))};
   }
 
 }
