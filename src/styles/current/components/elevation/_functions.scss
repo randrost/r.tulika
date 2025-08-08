@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./variables" as *;
 
 /// Returns the appropriate box-shadow for the given level and shadow color.
@@ -19,10 +20,10 @@
         @error '$elevation is required when $shadow-color is provided';
     }
 
-    $key-spread: map-get($shadow-map, $level, key);
-    $ambient-spread: map-get($shadow-map, $level, ambient);
-    $key-opacity: map-get($shadow-map, $level, keyOpacity);
-    $ambient-opacity: map-get($shadow-map, $level, ambientOpacity);
+    $key-spread: map.get($shadow-map, $level, key);
+    $ambient-spread: map.get($shadow-map, $level, ambient);
+    $key-opacity: map.get($shadow-map, $level, keyOpacity);
+    $ambient-opacity: map.get($shadow-map, $level, ambientOpacity);
 
     $key-color: rgba($shadow-key-css-color, $key-opacity);
     $ambient-color: rgba($shadow-ambient-css-color, $ambient-opacity);

@@ -1,5 +1,5 @@
 @use "function" as *;
-
+@use "sass:map";
 
 $assets-root: 'assets/';
 $fonts-root: $assets-root + 'fonts/';
@@ -124,102 +124,102 @@ $tb-typo-map: tbTypo(
   $tb-typo-base,
   (
     h1: (
-      font-size: #{map-get($tb-typo-sizes, h1)}rem,
-      /* 96sp*/ line-height: map-get($tb-typo-line-height, h1),
-      font-weight: map-get($tb-typo-weights, h1),
+      font-size: #{map.get($tb-typo-sizes, h1)}rem,
+      /* 96sp*/ line-height: map.get($tb-typo-line-height, h1),
+      font-weight: map.get($tb-typo-weights, h1),
       font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
     h2: (
-      font-size: #{map-get($tb-typo-sizes, h2)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, h2),
-      font-weight: map-get($tb-typo-weights, h2),
+      font-size: #{map.get($tb-typo-sizes, h2)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, h2),
+      font-weight: map.get($tb-typo-weights, h2),
       font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
     h3: (
-      font-size: #{map-get($tb-typo-sizes, h3)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, h3),
-      font-weight: map-get($tb-typo-weights, h3),
+      font-size: #{map.get($tb-typo-sizes, h3)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, h3),
+      font-weight: map.get($tb-typo-weights, h3),
       text-decoration: inherit,
       text-transform: inherit
     ),
     h4: (
-      font-size: #{map-get($tb-typo-sizes, h4)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, h4),
-      font-weight: map-get($tb-typo-weights, h4),
+      font-size: #{map.get($tb-typo-sizes, h4)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, h4),
+      font-weight: map.get($tb-typo-weights, h4),
       text-decoration: inherit,
       text-transform: inherit
     ),
     h5: (
-      font-size: #{map-get($tb-typo-sizes, h5)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, h5),
-      font-weight: map-get($tb-typo-weights, h5),
+      font-size: #{map.get($tb-typo-sizes, h5)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, h5),
+      font-weight: map.get($tb-typo-weights, h5),
       text-decoration: inherit,
       text-transform: inherit
     ),
     h6: (
-      font-size: #{map-get($tb-typo-sizes, h6)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, h6),
-      font-weight: map-get($tb-typo-weights, h6),
+      font-size: #{map.get($tb-typo-sizes, h6)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, h6),
+      font-weight: map.get($tb-typo-weights, h6),
       text-decoration: inherit,
       text-transform: inherit
     ),
     subtitle1: (
-      font-size: #{map-get($tb-typo-sizes, subtitle1)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, subtitle1),
-      font-weight: map-get($tb-typo-weights, subtitle1),
+      font-size: #{map.get($tb-typo-sizes, subtitle1)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, subtitle1),
+      font-weight: map.get($tb-typo-weights, subtitle1),
       text-decoration: inherit,
       text-transform: inherit
     ),
     subtitle2: (
-      font-size: #{map-get($tb-typo-sizes, subtitle2)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, subtitle2),
-      font-weight: map-get($tb-typo-weights, subtitle2),
+      font-size: #{map.get($tb-typo-sizes, subtitle2)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, subtitle2),
+      font-weight: map.get($tb-typo-weights, subtitle2),
       text-decoration: inherit,
       text-transform: inherit
     ),
     body1: (
-      font-size: #{map-get($tb-typo-sizes, body1)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, body1),
-      font-weight: map-get($tb-typo-weights, body1),
+      font-size: #{map.get($tb-typo-sizes, body1)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, body1),
+      font-weight: map.get($tb-typo-weights, body1),
       text-decoration: inherit,
       text-transform: inherit
     ),
     body2: (
-      font-size: #{map-get($tb-typo-sizes, body2)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, body2),
-      font-weight: map-get($tb-typo-weights, body2),
+      font-size: #{map.get($tb-typo-sizes, body2)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, body2),
+      font-weight: map.get($tb-typo-weights, body2),
       text-decoration: inherit,
       text-transform: inherit
     ),
     body3: (
-      font-size: #{map-get($tb-typo-sizes, body3)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, body3),
-      font-weight: map-get($tb-typo-weights, body3),
+      font-size: #{map.get($tb-typo-sizes, body3)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, body3),
+      font-weight: map.get($tb-typo-weights, body3),
       text-decoration: inherit,
       text-transform: inherit
     ),
     caption: (
-      font-size: #{map-get($tb-typo-sizes, caption)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, caption),
-      font-weight: map-get($tb-typo-weights, caption),
+      font-size: #{map.get($tb-typo-sizes, caption)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, caption),
+      font-weight: map.get($tb-typo-weights, caption),
       text-decoration: inherit,
       text-transform: uppercase
     ),
     button: (
-      font-size: #{map-get($tb-typo-sizes, button)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, button),
-      font-weight: map-get($tb-typo-weights, button),
+      font-size: #{map.get($tb-typo-sizes, button)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, button),
+      font-weight: map.get($tb-typo-weights, button),
       text-decoration: none,
       text-transform: none
     ),
     overline: (
-      font-size: #{map-get($tb-typo-sizes, overline)}rem,
-      /* 60sp*/ line-height: map-get($tb-typo-line-height, overline),
-      font-weight: map-get($tb-typo-weights, overline),
+      font-size: #{map.get($tb-typo-sizes, overline)}rem,
+      /* 60sp*/ line-height: map.get($tb-typo-line-height, overline),
+      font-weight: map.get($tb-typo-weights, overline),
       text-decoration: none,
       text-transform: uppercase
     )

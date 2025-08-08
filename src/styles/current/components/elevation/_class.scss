@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @use "./variables" as *;
 @use "./functions" as *;
 
@@ -7,7 +9,7 @@
 //     // --tb-theme-#{$colorKey}--rgb: #{hexToRGB(map-get($map: $tb-theme-map, $key: $colorKey))};
 // }
 
-@each $shadowLevel in map-keys($shadow-map) {
+@each $shadowLevel in map.keys($shadow-map) {
     .current-elevation--#{$shadowLevel} {
         //   @include tb-typo($typo);
         box-shadow: resolve-box-shadow(
