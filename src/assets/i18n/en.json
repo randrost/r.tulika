@@ -1,0 +1,106 @@
+{
+  "home": {
+    "main-container": {
+      "title": "Tulika's Labs",
+      "title-tooltip": "Click to go to Tulika's Labs",
+      "kitchen-sink-tooltip": "Click to go to Kitchen Sink",
+      "blog-tooltip": "Click to go to Tulika's Blog",
+      "language-tooltip": "Click to change language",
+      "languages": {
+        "en": "English",
+        "de": "Deutsch",
+        "ua": "Українська"
+      }
+    },
+    "pages": {
+      "top": {
+        "top-title": "Hi, I'm Rostyslav Tulika",
+        "title": [
+          {
+            "text": "Love"
+          },
+          {
+            "text": "to Craft Digital"
+          },
+          {
+            "text": "solutions & products"
+          }
+        ],
+        "subtitle": "I’m an app developer and UI/UX designer with experience in creating products for web. I have developed an IloT platform and a process control system, and have improved user interfaces and user experience using technologies like Angular JS, Angular Material, and Material Design 3."
+      },
+      "about": {
+        "title": "About Me.",
+        "main-text": "I'm a **Software Developer** with a passion for creating robust and **user-friendly** software solutions. My journey in development has equipped me with skills in a variety of **modern** technologies.",
+        "text": "My objective is to build **efficient and elegant** applications with a focus on clean code architecture and exceptional user experience.",
+        "experiences": [
+          {
+            "number": "01+",
+            "text": "Years of Professional Experience"
+          },
+          {
+            "number": "05+",
+            "text": "Projects Contributed To"
+          }
+        ],
+        "skills": {
+          "first-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Design"
+            },
+            {
+              "color": "#FFD647",
+              "text": "UI/UX",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#F57FFF",
+              "text": "Material Design 3",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#6F73C3",
+              "text": "Style Guides",
+              "textClass": "tb-color--white"
+            }
+          ],
+          "second-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Development"
+            },
+            {
+              "color": "#A289FF",
+              "text": "AngularJS",
+              "textClass": "tb-color--white"
+            },
+            {
+              "color": "#FF3333",
+              "text": "NestJS",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#027DFD",
+              "text": "Flutter",
+              "textClass": "tb-color--white"
+            }
+          ]
+        },
+        "download-cv-tooltip": "Download CV"
+      },
+      "contact": {
+      },
+      "expertise": {
+      },
+      "platforms": {
+      },
+      "showcases": {
+        "title": "Showcases",
+        "recent-apps": "Recent Apps I've Contributed To.",
+        "my-apps": "My Apps."
+      }
+    },
+    "footer": {
+    }
+  }
+}
