@@ -1,27 +1,24 @@
-import { Component } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
+import {Component, inject} from '@angular/core';
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
+import {RouterOutlet} from "@angular/router";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: false
+  selector: 'app-root',
+  templateUrl: './app.html',
+  styleUrls: ['./app.scss'],
+  imports: [RouterOutlet],
+  standalone: true
 })
-export class AppComponent {
-  title = 'niraj-portfolio';
+export class App {
+  private translate = inject(TranslateService);
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer){
-
-    this.addSvgIcons(iconRegistry, sanitizer)
-
-  }
-
-  ngOnInit() {
-    // debug current pages
-    // this.links$.subscribe((links) => {
-    //   // console.log(links);
-    // });
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    this.addSvgIcons(iconRegistry, sanitizer);
+    this.translate.addLangs(['de', 'en', 'ua']);
+    this.translate.setFallbackLang('en');
+    this.translate.use('en');
   }
 
   addSvgIcons(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
@@ -53,14 +50,14 @@ export class AppComponent {
       // .addSvgIcon('facebook',
       //   sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/social/facebook.svg'))
       .addSvgIcon('arrow',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/arrow_top_right.svg'))
+        sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/arrow_top_right.svg'))
 
       .addSvgIcon('dribble',
         sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/social/dribble.svg'))
 
       .addSvgIcon('github',
         sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/social/github.svg'))
-        .addSvgIcon('instagram',
+      .addSvgIcon('instagram',
         sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/social/instagram.svg'))
 
       .addSvgIcon('linkedin',
@@ -125,7 +122,5 @@ export class AppComponent {
     // sanitizer.bypassSecurityTrustResourceUrl('assets/icons/arrow_prev.svg'))
     // .addSvgIcon('arrow-next',
     // sanitizer.bypassSecurityTrustResourceUrl('assets/icons/arrow_next.svg'))
-
-
   }
 }
