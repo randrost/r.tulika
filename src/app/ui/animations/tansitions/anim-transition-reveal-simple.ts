@@ -2,10 +2,8 @@ import { Directive } from '@angular/core';
 
 @Directive({
     selector: '[appAnimTransitionRevealSimple]',
-    standalone: false
+    standalone: true
 })
-export class AnimTransitionRevealSimpleDirective {
-
+export class AnimTransitionRevealSimple {
   constructor() { }
-
 }
