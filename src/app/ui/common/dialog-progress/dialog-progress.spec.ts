@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogProgressComponent } from './dialog-progress.component';
+import { DialogProgress } from './dialog-progress';
 
 describe('DialogProgressComponent', () => {
-  let component: DialogProgressComponent;
-  let fixture: ComponentFixture<DialogProgressComponent>;
+  let component: DialogProgress;
+  let fixture: ComponentFixture<DialogProgress>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DialogProgressComponent ]
-    })
+    imports: [DialogProgress]
+})
     .compileComponents();
 
-    fixture = TestBed.createComponent(DialogProgressComponent);
+    fixture = TestBed.createComponent(DialogProgress);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
