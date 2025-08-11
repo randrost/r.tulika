@@ -8,8 +8,8 @@
       "language-tooltip": "Click to change language",
       "languages": {
         "en": "English",
-        "de": "Deutsch",
-        "ua": "Українська"
+        "de": "German",
+        "ua": "Ukrainian"
       }
     },
     "pages": {
@@ -26,7 +26,7 @@
             "text": "solutions & products"
           }
         ],
-        "subtitle": "I’m an app developer and UI/UX designer with experience in creating products for web. I have developed an IloT platform and a process control system, and have improved user interfaces and user experience using technologies like Angular JS, Angular Material, and Material Design 3."
+        "subtitle": "I’m an Software Developer with experience in creating products for web. I have developed an IloT platforms and a process control systems, and have improved user interfaces and user experience using technologies like Angular JS, Angular Material, and Material Design 3."
       },
       "about": {
         "title": "About Me.",
@@ -88,19 +88,75 @@
         },
         "download-cv-tooltip": "Download CV"
       },
-      "contact": {
-      },
-      "expertise": {
-      },
-      "platforms": {
-      },
       "showcases": {
         "title": "Showcases",
         "recent-apps": "Recent Apps I've Contributed To.",
+        "recent-apps-description": "Here are some of the recent applications I've worked on, showcasing my skills in app development and design.",
         "my-apps": "My Apps."
+      },
+      "expertise": {
+        "title": "Expertise.",
+        "expertise": [
+          {
+            "jobType": "Web Development",
+            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Backend Development",
+            "parts": ["NestJS", "Node.js", "Express.js", "MongoDB", "Microservices", "Spring Boot", "Java", "TypeScript", ".NET"]
+          },
+          {
+            "jobType": "Design",
+            "parts": ["UI/UX", "Material Design 3", "Style Guides"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Mobile Development",
+            "parts": ["Flutter", "Ionic"]
+          },
+          {
+            "jobType": "DevOps",
+            "parts": ["Docker", "Jenkins", "Rancher"]
+          }
+        ]
+      },
+      "contact": {
+        "get-in-touch": "Get in Touch.",
+        "subtitle": "Interested in working together with me?",
+        "or": "Or",
+        "email-description": "Feel free to reach out if you have a question or just want to connect.",
+        "email": "rostik.tulika@gmail.com",
+
+        "name-input": "Your Name",
+        "name-placeholder": "John Doe",
+        "email-input": "Your Email",
+        "email-placeholder": "john.doe@example.com",
+        "message-input": "Extra details",
+        "write-something": "Write something...",
+        "required-error": "This field is required",
+        "length-error": "This field must be at least 10 characters long",
+        "send-button": "Send Message"
+      },
+      "platforms": {
       }
     },
     "footer": {
+      "original": "Originally designed and developed by",
+      "reworked": "Reworked, updated and maintained using best practices by",
+
+      "designed-in": "Designed in",
+      "built-with": "Built with",
+      "icons": "Icons",
+      "platforms": "Platforms",
+      "logos": "Logos",
+      "copy-right": "© 2019, 2025 Copyright | nirajprakash.github.io and r.tulika | All rights reserved."
     }
+  },
+  "error": {
+    "no-image": "No image is available yet."
+  },
+  "misc": {
+    "coming-soon": "Coming Soon"
   }
 }

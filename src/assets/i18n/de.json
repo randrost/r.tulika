@@ -1,6 +1,159 @@
 {
-  "app": {
-    "hello": "hello {{value}}",
-    "title": "Translation Demo"
+  "home": {
+    "main-container": {
+      "title": "Tulika's Labs",
+      "title-tooltip": "Zu Tulika's Labs wechseln",
+      "kitchen-sink-tooltip": "Zu Kitchen Sink wechseln",
+      "blog-tooltip": "Zu Rostyslav Tulikas Blog wechseln",
+      "language-tooltip": "Sprache ändern",
+      "languages": {
+        "en": "Englisch",
+        "de": "Deutsch",
+        "ua": "Ukrainisch"
+      }
+    },
+    "pages": {
+      "top": {
+        "top-title": "Hallo, ich bin Rostyslav Tulika",
+        "title": [
+          {
+            "text": "Entwickler"
+          },
+          {
+            "text": "Von Digitalen"
+          },
+          {
+            "text": "Lösungen & Produkten"
+          }
+        ],
+        "subtitle": "Ich bin ein Softwareentwickler mit Erfahrung in der Erstellung von Web-Produkten. Ich habe IloT-Plattformen und Prozessleitsysteme entwickelt und die Benutzeroberflächen sowie die Benutzererfahrung mit Technologien wie Angular JS, Angular Material und Material Design 3 verbessert."
+      },
+      "about": {
+        "title": "Über mich",
+        "main-text": "Ich bin ein **Softwareentwickler** mit Leidenschaft für die Erstellung robuster und **benutzerfreundlicher** Softwarelösungen. Mein beruflicher Werdegang hat mich mit Fähigkeiten in einer Vielzahl von **modernen** Technologien ausgestattet.",
+        "text": "Mein Ziel ist es, **effiziente und elegante** Anwendungen zu entwickeln, die sich auf saubere Code-Architektur und eine außergewöhnliche Benutzererfahrung konzentrieren.",
+        "experiences": [
+          {
+            "number": "1+",
+            "text": "Jahr Berufserfahrung"
+          },
+          {
+            "number": "5+",
+            "text": "Projekte, an denen ich mitgewirkt habe"
+          }
+        ],
+        "skills": {
+          "first-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Design"
+            },
+            {
+              "color": "#FFD647",
+              "text": "UI/UX",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#F57FFF",
+              "text": "Material Design 3",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#6F73C3",
+              "text": "Style Guides",
+              "textClass": "tb-color--white"
+            }
+          ],
+          "second-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Entwicklung"
+            },
+            {
+              "color": "#A289FF",
+              "text": "AngularJS",
+              "textClass": "tb-color--white"
+            },
+            {
+              "color": "#FF3333",
+              "text": "NestJS",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#027DFD",
+              "text": "Flutter",
+              "textClass": "tb-color--white"
+            }
+          ]
+        },
+        "download-cv-tooltip": "CV herunterladen"
+      },
+      "showcases": {
+        "title": "Projekte",
+        "recent-apps": "Aktuelle Projekte, an denen ich mitgewirkt habe",
+        "recent-apps-description": "Hier sind einige der neuesten Anwendungen, an denen ich gearbeitet habe, die meine Fähigkeiten in der App-Entwicklung und im Design demonstrieren.",
+        "my-apps": "Meine Projekte"
+      },
+      "expertise": {
+        "title": "Expertise",
+        "expertise": [
+          {
+            "jobType": "Web-Entwicklung",
+            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Backend-Entwicklung",
+            "parts": ["NestJS", "Node.js", "Express.js", "MongoDB", "Microservices", "Spring Boot", "Java", "TypeScript", ".NET"]
+          },
+          {
+            "jobType": "Design",
+            "parts": ["UI/UX", "Material Design 3", "Style Guides"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Mobile Entwicklung",
+            "parts": ["Flutter", "Ionic"]
+          },
+          {
+            "jobType": "DevOps",
+            "parts": ["Docker", "Jenkins", "Rancher"]
+          }
+        ]
+      },
+      "contact": {
+        "get-in-touch": "Kontakt aufnehmen",
+        "subtitle": "Interessiert an einer Zusammenarbeit?",
+        "or": "Oder",
+        "email-description": "Schreib mir gerne, wenn du eine Frage hast oder einfach nur in Kontakt treten möchtest.",
+        "email": "rostik.tulika@gmail.com",
+        "name-input": "Dein Name",
+        "name-placeholder": "Max Mustermann",
+        "email-input": "Deine E-Mail",
+        "email-placeholder": "max.mustermann@example.com",
+        "message-input": "Zusätzliche Details",
+        "write-something": "Schreib etwas...",
+        "required-error": "Dieses Feld ist erforderlich",
+        "length-error": "Dieses Feld muss mindestens 10 Zeichen lang sein",
+        "send-button": "Nachricht senden"
+      },
+      "platforms": {}
+    },
+    "footer": {
+      "original": "Ursprünglich entworfen und entwickelt von",
+      "reworked": "Überarbeitet, aktualisiert und gepflegt unter Verwendung bewährter Verfahren von",
+      "designed-in": "Entworfen in",
+      "built-with": "Erstellt mit",
+      "icons": "Icons",
+      "platforms": "Plattformen",
+      "logos": "Logos",
+      "copy-right": "© 2019, 2025 Urheberrecht | nirajprakash.github.io and r.tulika | Alle Rechte vorbehalten."
+    }
+  },
+  "error": {
+    "no-image": "Kein Bild verfügbar."
+  },
+  "misc": {
+    "coming-soon": "Bald verfügbar"
   }
 }

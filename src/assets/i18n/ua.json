@@ -1,6 +1,156 @@
 {
-  "app": {
-    "hello": "hello {{value}}",
-    "title": "Translation Demo"
+  "home": {
+    "main-container": {
+      "title": "Tulika's Labs",
+      "title-tooltip": "Перейти до Tulika's Labs",
+      "kitchen-sink-tooltip": "Перейти до Kitchen Sink",
+      "blog-tooltip": "Перейти до блогу Ростислава Тулики",
+      "language-tooltip": "Змінити мову",
+      "languages": {
+        "en": "Англійська",
+        "de": "Німецька",
+        "ua": "Українська"
+      }
+    },
+    "pages": {
+      "top": {
+        "top-title": "Привіт, я Ростислав Тулика",
+        "title": [
+          {
+            "text": "Створюю цифрові"
+          },
+          {
+            "text": "рішення та продукти"
+          }
+        ],
+        "subtitle": "Я розробник програмного забезпечення з досвідом створення веб-продуктів. Розробляв платформи IloT та системи керування процесами, а також покращував інтерфейси та досвід користувачів за допомогою таких технологій, як Angular JS, Angular Material та Material Design 3."
+      },
+      "about": {
+        "title": "Про мене",
+        "main-text": "Я **Розробник програмного забезпечення** з пристрастю до створення надійних та **зручних для користувача** рішень. Мій досвід у розробці дозволив мені опанувати різні **сучасні** технології.",
+        "text": "Моя мета — створювати **ефективні та елегантні** програми з акцентом на чисту архітектуру коду та винятковий користувацький досвід.",
+        "experiences": [
+          {
+            "number": "1+",
+            "text": "Рік професійного досвіду"
+          },
+          {
+            "number": "5+",
+            "text": "Проєктів, до яких я долучився"
+          }
+        ],
+        "skills": {
+          "first-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Дизайн"
+            },
+            {
+              "color": "#FFD647",
+              "text": "UI/UX",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#F57FFF",
+              "text": "Material Design 3",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#6F73C3",
+              "text": "Гайди стилю",
+              "textClass": "tb-color--white"
+            }
+          ],
+          "second-row": [
+            {
+              "class": "tb-color-bg--black-6",
+              "text": "Розробка"
+            },
+            {
+              "color": "#A289FF",
+              "text": "AngularJS",
+              "textClass": "tb-color--white"
+            },
+            {
+              "color": "#FF3333",
+              "text": "NestJS",
+              "textClass": "tb-color--black"
+            },
+            {
+              "color": "#027DFD",
+              "text": "Flutter",
+              "textClass": "tb-color--white"
+            }
+          ]
+        },
+        "download-cv-tooltip": "Завантажити резюме"
+      },
+      "showcases": {
+        "title": "Проєкти",
+        "recent-apps": "Останні проєкти, над якими я працював",
+        "recent-apps-description": "Тут представлені деякі з останніх проєктів, над якими я працював, демонструючи свої навички в розробці та дизайні.",
+        "my-apps": "Мої проєкти"
+      },
+      "expertise": {
+        "title": "Досвід",
+        "expertise": [
+          {
+            "jobType": "Веб-розробка",
+            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Бекенд розробка",
+            "parts": ["NestJS", "Node.js", "Express.js", "MongoDB", "Microservices", "Spring Boot", "Java", "TypeScript", ".NET"]
+          },
+          {
+            "jobType": "Дизайн",
+            "parts": ["UI/UX", "Material Design 3", "Гайди стилю"],
+            "isColored": "true"
+          },
+          {
+            "jobType": "Мобільна розробка",
+            "parts": ["Flutter", "Ionic"]
+          },
+          {
+            "jobType": "DevOps",
+            "parts": ["Docker", "Jenkins", "Rancher"]
+          }
+        ]
+      },
+      "contact": {
+        "get-in-touch": "Зв'яжіться зі мною",
+        "subtitle": "Зацікавлені у співпраці?",
+        "or": "Або",
+        "email-description": "Пишіть, якщо у вас є запитання або ви хочете поспілкуватися.",
+        "email": "rostik.tulika@gmail.com",
+        "name-input": "Ваше ім'я",
+        "name-placeholder": "Іван Сидоренко",
+        "email-input": "Ваш Email",
+        "email-placeholder": "ivan.sydorenko@example.com",
+        "message-input": "Додаткові деталі",
+        "write-something": "Напишіть щось...",
+        "required-error": "Це поле є обов'язковим",
+        "length-error": "Це поле повинно містити не менше 10 символів",
+        "send-button": "Надіслати повідомлення"
+      },
+      "platforms": {}
+    },
+    "footer": {
+      "original": "Спочатку розроблено та створено",
+      "reworked": "Перероблено, оновлено та підтримується відповідно до найкращих практик",
+      "designed-in": "Розроблено в",
+      "built-with": "Створено за допомогою",
+      "icons": "Іконки",
+      "platforms": "Платформи",
+      "logos": "Логотипи",
+      "copy-right": "© 2019, 2025 Copyright | nirajprakash.github.io and r.tulika | Усі права захищені."
+    }
+  },
+  "error": {
+    "no-image": "Зображення недоступне."
+  },
+  "misc": {
+    "coming-soon": "Незабаром"
   }
 }
