@@ -1,0 +1,74 @@
+<div class="main tb-height--full junkie">
+  <mat-toolbar [@transitionFromTop]="{value:'in', params: {animDelay: 200}}"
+               class="junkie-top-nav tb-position--absolute tb-width--full tb-z-index--3 tb-padding--v-4">
+    <mat-toolbar-row>
+      <a class="tb-a--unset" matRipple routerLink="/"
+         matTooltip="{{ 'home.main-container.title-tooltip' | translate }}">
+        <div ngClass.gt-xs="logo_area tb-padding--8-24" ngClass.xs="logo_area tb-padding--0" fxLayout="row"
+             fxLayoutAlign="start center" fxLayoutGap="12px">
+          <div class="tb-height--32">
+            <img class="image logo" src="assets/svg/logo/rt_logo.svg">
+          </div>
+          <h4 class="tb-typo--h4 tb-color--black">{{ 'home.main-container.title' | translate }}</h4>
+        </div>
+      </a>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row fxFlex fxHide.lt-md fxLayoutAlign="center center"></mat-toolbar-row>
+
+    <mat-toolbar-row fxLayoutAlign="end center">
+      <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
+<!--        <button mat-icon-button class="tb-a&#45;&#45;unset" routerLink="/"-->
+<!--                matTooltip="{{ 'home.main-container.kitchen-sink-tooltip' | translate }}" >-->
+<!--          <mat-icon class="tb-color&#45;&#45;black">-->
+<!--            sdk-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+
+<!--        <div class="tb-height&#45;&#45;24 tb-width&#45;&#45;1 tb-bg&#45;&#45;black-6 tb-margin&#45;&#45;h-8" fxLayoutAlign="center center" fxHide.lt-md-->
+<!--             fxShow.gt-xs style="border-left: 4px solid #0000001A;"></div>-->
+
+<!--        <button mat-icon-button class="tb-a&#45;&#45;unset" routerLink="/blog"-->
+<!--                matTooltip="{{ 'home.main-container.blog-tooltip' | translate }}">-->
+<!--          <mat-icon class="tb-color&#45;&#45;black">-->
+<!--            subject-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+
+
+<!--        <div class="tb-height&#45;&#45;24 tb-width&#45;&#45;1 tb-bg&#45;&#45;black-6 tb-margin&#45;&#45;h-8" fxLayoutAlign="center center" fxHide.lt-md-->
+<!--             fxShow.gt-xs style="border-left: 4px solid #0000001A;"></div>-->
+
+        <button mat-icon-button class="tb-a--unset" [matMenuTriggerFor]="languageMenu"
+                matTooltip="{{ 'home.main-container.language-tooltip' | translate }}">
+          <mat-icon class="tb-color--black">
+            language
+          </mat-icon>
+        </button>
+
+        <mat-menu #languageMenu="matMenu">
+          <button mat-menu-item (click)="setLanguage('en')">
+            {{ 'home.main-container.languages.en' | translate }}
+          </button>
+          <button mat-menu-item (click)="setLanguage('de')">
+            {{ 'home.main-container.languages.de' | translate }}
+          </button>
+          <button mat-menu-item (click)="setLanguage('ua')">
+            {{ 'home.main-container.languages.ua' | translate }}
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <!-- conatiner div -->
+  <mat-sidenav-container class="tb-height--full">
+    <mat-sidenav-content fxLayout="column">
+      <div class="tb-height--full" fxLayout="column">
+        <div fxFlex cdkScrollable class="tb-height--full tb-overflow--auto" id="dashboard-container">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
