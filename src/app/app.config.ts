@@ -27,6 +27,6 @@ export const appConfig: ApplicationConfig = {
       fallbackLang: 'en',
       lang: 'en'
     }),
-    {provide: RECAPTCHA_V3_SITE_KEY, useValue: environment.recaptcha}
+    // {provide: RECAPTCHA_V3_SITE_KEY, useValue: environment.recaptcha}
   ]
 };
