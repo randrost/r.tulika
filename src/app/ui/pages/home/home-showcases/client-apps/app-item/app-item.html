@@ -1,0 +1,23 @@
+<a class="main tb-position--relative unlink" ngClass.xs="xs" ngClass.sm="sm" [href]="_mAppUrl" target="_blank"
+   fxLayout="column" #animRefView>
+  <div class="background"></div>
+
+  <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch" class="content tb-position--relative">
+
+    <h4 class="current-typo--h5 tb-text-align--center tb-color--black" ngClass.xs="current-typo--h6">{{ _mName }}</h4>
+
+    <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+    <div class="image-area">
+      @if (_mImage) {
+        <img class="image" [src]="_mImage" alt="">
+      } @else {
+        <div class="no-image">
+          <span class="current-typo--body1-medium tb-color--black-54">
+          {{ "error.no-image" | translate }}
+          </span>
+        </div>
+      }
+    </div>
+  </div>
+</a>

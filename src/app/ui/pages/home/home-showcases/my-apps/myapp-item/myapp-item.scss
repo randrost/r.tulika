@@ -1,0 +1,98 @@
+@use 'sass:color';
+
+@function hexToCssRGB($hex) {
+  @return color.channel($hex, "red"), color.channel($hex, "green"), color.channel($hex, "blue");
+}
+
+@function color($color-name) {
+  @return var(--#{$color-name});
+}
+
+:host {
+  --app-primary: blue;
+  --app-primary--rgb: #{hexToCssRGB(#0000ff)};
+}
+
+
+.main {
+  &.sm {
+    .image-area {
+
+      height: 400px;
+    }
+  }
+
+  &.xs {
+    width: 100%;
+
+    .image-area {
+      height: unset;
+      width: 100%;
+
+      .image {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+
+    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.05);
+  }
+
+  .content {
+    z-index: 1;
+  }
+
+  .image-area {
+    display: flex;
+    max-height: 100%;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+      box-sizing: border-box;
+    }
+  }
+
+  .icon-area {
+    height: 4rem;
+    border-radius: 50%;
+    width: 4rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-outline {
+    border: solid 1px black;
+  }
+
+  .dev-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 1rem;
+    border-radius: 20px;
+    border: solid 1px black;
+  }
+}
+
+.unlink {
+  text-decoration: unset;
+}
