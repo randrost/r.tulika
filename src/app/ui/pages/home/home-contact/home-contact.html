@@ -1,0 +1,91 @@
+<div class="tb-position--relative main current" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+  <div class="tb-container tb-position--relative container">
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+      <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
+      <h2 [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" ngClass.gt-sm="current-typo--h3-light"
+          ngClass.sm="current-typo--h3-light"
+          ngClass.xs="current-typo--h4">{{ 'home.pages.contact.get-in-touch' | translate }}</h2>
+
+      <div ngClass.gt-xs="tb-height--56" ngClass.xs="tb-height--20"></div>
+
+<!--      <div class="form-area tb-color-bg&#45;&#45;black-2 tb-border&#45;&#45;r6" fxLayout="column" fxLayoutAlign="start stretch">-->
+<!--        <div ngClass.gt-xs="tb-height&#45;&#45;32" ngClass.xs="tb-height&#45;&#45;20"></div>-->
+<!--        <h4 [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}" class="tb-text-align&#45;&#45;center"-->
+<!--            ngClass.gt-xs="current-typo&#45;&#45;h4" ngClass.xs="current-typo&#45;&#45;h5">-->
+<!--          {{ 'home.pages.contact.subtitle' | translate }} </h4>-->
+<!--        <form [@transitionImageScale]="{value:_mTriggerAnim, params: {animDelay: 300}}" fxLayout="column"-->
+<!--              [formGroup]="formGroup">-->
+<!--          <div ngClass.gt-xs="tb-height&#45;&#45;32" ngClass.xs="tb-height&#45;&#45;20"></div>-->
+<!--          <div fxLayout.gt-xs="row" fxLayoutGap.gt-xs="56" fxLayout.xs="column">-->
+
+<!--            <mat-form-field class="tb-width&#45;&#45;full">-->
+<!--              <mat-label>{{ 'home.pages.contact.name-input' | translate }}</mat-label>-->
+<!--              <input matInput formControlName="name" type="text"-->
+<!--                     placeholder="{{ 'home.pages.contact.name-placeholder' | translate }}">-->
+<!--              @if (formGroup.controls.name.invalid) {-->
+<!--                <mat-error>{{ 'home.pages.contact.required-error' | translate }}</mat-error>-->
+<!--              }-->
+<!--            </mat-form-field>-->
+
+<!--            <mat-form-field class="tb-width&#45;&#45;full">-->
+<!--              <mat-label>{{ 'home.pages.contact.email-input' | translate }}</mat-label>-->
+<!--              <input matInput formControlName="email" type="email"-->
+<!--                     placeholder="{{ 'home.pages.contact.email-placeholder' | translate }}">-->
+<!--              @if (formGroup.controls.email.invalid) {-->
+<!--                <mat-error>{{ 'home.pages.contact.required-error' | translate }}</mat-error>-->
+<!--              }-->
+<!--            </mat-form-field>-->
+<!--          </div>-->
+
+<!--          <div ngClass.gt-xs="tb-height&#45;&#45;20" ngClass.xs="tb-height&#45;&#45;0"></div>-->
+
+<!--          <mat-form-field class="tb-width&#45;&#45;full">-->
+<!--            <mat-label>{{ 'home.pages.contact.message-input' | translate }}</mat-label>-->
+<!--            <textarea matInput-->
+<!--                      cdkTextareaAutosize-->
+<!--                      #autosize="cdkTextareaAutosize"-->
+<!--                      cdkAutosizeMinRows="4"-->
+<!--                      cdkAutosizeMaxRows="8" class="tb-width&#45;&#45;full"-->
+<!--                      placeholder="{{ 'home.pages.contact.write-something' | translate }}"-->
+<!--                      formControlName="details"-->
+<!--            ></textarea>-->
+<!--            @if (formGroup.controls.details.invalid) {-->
+<!--              <mat-error>{{ 'home.pages.contact.length-error' | translate }}</mat-error>-->
+<!--            }-->
+<!--          </mat-form-field>-->
+
+<!--          <div ngClass.gt-xs="tb-height&#45;&#45;20" ngClass.xs="tb-height&#45;&#45;12"></div>-->
+
+<!--          <div class="" fxFlexAlign="end">-->
+<!--            @if (!_mInProgress) {-->
+<!--              <button mat-raised-button color="primary" type="submit" [disabled]="formGroup.invalid"-->
+<!--                      (click)="_onSubmit()" class=" current-typo&#45;&#45;button">-->
+<!--                <span class="current-typo&#45;&#45;button tb-padding&#45;&#45;16-24">-->
+<!--                  {{ 'home.pages.contact.send-button' | translate }}-->
+<!--                </span>-->
+<!--              </button>-->
+<!--            }-->
+<!--          </div>-->
+<!--          <div ngClass.lt-md="tb-padding&#45;&#45;v-12" ngClass.gt-sm="tb-padding&#45;&#45;v-36"></div>-->
+<!--        </form>-->
+<!--      </div>-->
+
+<!--      <div ngClass.gt-xs="tb-height&#45;&#45;36" ngClass.xs="tb-height&#45;&#45;20"></div>-->
+<!--      <h4 [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 400}}" class="tb-color&#45;&#45;black"-->
+<!--          ngClass.gt-xs="current-typo&#45;&#45;h4" ngClass.xs="current-typo&#45;&#45;h5">{{ 'home.pages.contact.or' | translate }}</h4>-->
+
+<!--      <div ngClass.gt-xs="tb-height&#45;&#45;36" ngClass.xs="tb-height&#45;&#45;20"></div>-->
+
+      <p [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 500}}"
+         class="connect-detail tb-color--black-38" ngClass.gt-sm="current-typo--body1"
+         ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+        {{ 'home.pages.contact.email-description' | translate }}</p>
+      <div ngClass.gt-xs="tb-height--24" ngClass.xs="tb-height--16"></div>
+
+      <div [@transitionText]="{value:_mTriggerAnim,  params: {animDelay: 600}}" class="underline"><a
+        class="tb-color--black" ngClass.gt-xs="current-typo--h4 " ngClass.xs="current-typo--h5"
+        [href]="('mailto:') + ('home.pages.contact.email' | translate)">{{ 'home.pages.contact.email' | translate }}</a>
+      </div>
+    </div>
+  </div>
+</div>
