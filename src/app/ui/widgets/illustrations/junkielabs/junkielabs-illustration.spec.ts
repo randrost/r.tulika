@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JunkielabsIllustrationComponent } from './junkielabs-illustration.component';
+import { JunkielabsIllustration } from './junkielabs-illustration';
 
 describe('JunkielabsIllustrationComponent', () => {
-  let component: JunkielabsIllustrationComponent;
-  let fixture: ComponentFixture<JunkielabsIllustrationComponent>;
+  let component: JunkielabsIllustration;
+  let fixture: ComponentFixture<JunkielabsIllustration>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ JunkielabsIllustrationComponent ]
-    })
+    imports: [JunkielabsIllustration]
+})
     .compileComponents();
 
-    fixture = TestBed.createComponent(JunkielabsIllustrationComponent);
+    fixture = TestBed.createComponent(JunkielabsIllustration);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

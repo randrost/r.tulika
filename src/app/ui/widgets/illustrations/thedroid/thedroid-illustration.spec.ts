@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ThedroidIllustrationComponent } from './thedroid-illustration.component';
+import { ThedroidIllustration } from './thedroid-illustration';
 
 describe('ThedroidIllustrationComponent', () => {
-  let component: ThedroidIllustrationComponent;
-  let fixture: ComponentFixture<ThedroidIllustrationComponent>;
+  let component: ThedroidIllustration;
+  let fixture: ComponentFixture<ThedroidIllustration>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ThedroidIllustrationComponent ]
-    })
+    imports: [ThedroidIllustration]
+})
     .compileComponents();
 
-    fixture = TestBed.createComponent(ThedroidIllustrationComponent);
+    fixture = TestBed.createComponent(ThedroidIllustration);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
