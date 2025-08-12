@@ -65,6 +65,10 @@
       object-fit: contain;
       box-sizing: border-box;
     }
+
+    .shadow {
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.4);
+    }
   }
 
   .icon-area {

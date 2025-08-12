@@ -1,5 +1,8 @@
 export interface AppType {
   inDevelopment?: boolean;
+  showShadow?: boolean;
+  isInternal?: boolean;
+
   name: string// "Sensify: Phone Sensors Plots",
   image: string// "assets/img/apps/sensify.webp",
   link: string// "https://play.google.com/store/apps/details?id=io.sensify.sensor",

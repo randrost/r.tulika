@@ -10,7 +10,8 @@
 
     <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch" class="content tb-position--relative">
       <div class="image-area">
-        <img class="image" [src]="_mModel.image">
+        <img class="image {{_mModel?.showShadow ? 'shadow' : ''}}"
+             [src]="_mModel.image">
       </div>
       <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
 
@@ -25,15 +26,20 @@
             {{ _mModel.name }}
           </h6>
         </div>
-        @if (!_mModel.inDevelopment) {
+        @if (!_mModel.inDevelopment && !_mModel.isInternal) {
           <div class="icon-area" [class.icon-outline]="!_mModel.primary"
                [ngStyle]="_mModel.primary ? {background:_mModel.primary} : {}">
             <mat-icon svgIcon="arrow"></mat-icon>
           </div>
         } @else {
           <div class="dev-area">
-            {{ 'misc.coming-soon' | translate }}
-            <mat-icon fontIcon="construction"></mat-icon>
+            @if (_mModel.isInternal) {
+              {{ 'misc.internal' | translate }}
+              <mat-icon fontIcon="lock"></mat-icon>
+            } @else {
+              {{ 'misc.coming-soon' | translate }}
+              <mat-icon fontIcon="construction"></mat-icon>
+            }
           </div>
         }
       </div>

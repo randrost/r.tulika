@@ -3,6 +3,7 @@ import {FlexLayoutModule} from "ng-flex-layout";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
 import {UiUtilsColor} from "../../../../../../core/utils/color.utils";
 import {TranslatePipe} from "@ngx-translate/core";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-app-item',
@@ -12,6 +13,7 @@ import {TranslatePipe} from "@ngx-translate/core";
     FlexLayoutModule,
     FlexLayoutServerModule,
     TranslatePipe,
+    MatIcon,
   ],
   standalone: true
 })
@@ -51,6 +53,14 @@ export class AppItem implements OnInit {
     var element = this.el.nativeElement
     element.style.setProperty('--app-primary', this._mColor);
     element.style.setProperty('--app-primary--rgb', UiUtilsColor.hexToRgb(this._mColor));
+  }
+
+  prevImage() {
+
+  }
+
+  nextImage() {
+
   }
 }
 

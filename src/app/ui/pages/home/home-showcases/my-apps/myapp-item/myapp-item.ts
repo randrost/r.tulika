@@ -5,11 +5,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import {RecaptchaV3Module} from "ng-recaptcha";
 import {MatIconModule} from "@angular/material/icon";
 import {FlexLayoutModule} from "ng-flex-layout";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
-import {MatTooltip} from "@angular/material/tooltip";
 import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({

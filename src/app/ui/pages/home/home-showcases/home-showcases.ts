@@ -26,7 +26,6 @@ import {UiUtilsView} from "../../../../core/utils/views.utils";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
 import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {TranslatePipe} from "@ngx-translate/core";
-import {AppItemType} from "./client-apps/app-item/app-item";
 import {AppType} from "../../../../types/apps_type";
 
 @Component({
@@ -39,7 +38,6 @@ import {AppType} from "../../../../types/apps_type";
   ],
   imports: [
     MyApps,
-    ClientApps,
     FlexLayoutModule,
     FlexLayoutServerModule,
     TranslatePipe,
@@ -56,53 +54,90 @@ export class HomeShowcases implements AfterViewInit {
   _mTriggerAnim? = 'false';
   _mThreshold = 0.2;
 
-  clientApps: AppItemType[] = [
+  // clientApps: AppItemType[] = [
+  //   {
+  //     name: "Inframan: IIoT Devices Management",
+  //     image: "assets/img/clients/inframan.jpg",
+  //     link: "https://www.linkedin.com/posts/narz_audako-inframan-unsere-l%C3%B6sung-f%C3%BCr-smarte-activity-7267834202534920194-hTNJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXbLc0Bkn493tLHsy0mxwhT8Kh1QbwWwTM",
+  //     color: "#FFFFFF"
+  //   },
+  //   {
+  //     name: "audako: Modern Process Control System",
+  //     image: "assets/img/clients/audako2.png",
+  //     link: "https://www.narz.net/leistungen/audako-plattform",
+  //   },
+  //   {
+  //     name: "License Manager: License Management for Software",
+  //   },
+  //   {
+  //     name: "IIoT Configurator: Full Stack IIoT Solution",
+  //     image: "assets/img/clients/iot.jpg",
+  //   },
+  // ];
+
+  myApps: AppType[] = [
+    // {
+    //   name: "Licendra: Enterprise Multitenant Licensing",
+    //   image: "assets/img/apps/licendra_com.png",
+    //   link: "",
+    //   tab: "Web and Android",
+    //   caption: "In Angular & Ionic -",
+    //   isFull: false,
+    //   inDevelopment: true,
+    //   primary: "#3FD67D",
+    //   background: "#E1E1E1"
+    // },
+    // {
+    //   name: "LLems: AI Powered Trading Bot",
+    //   image: "assets/img/apps/llems_net.png",
+    //   link: "",
+    //   tab: "Android",
+    //   isFull: false,
+    //   inDevelopment: true,
+    //   caption: "In Flutter -",
+    //   background: "#F5E7B4"
+    // },
+    // {
+    //   name: "Zyppins Haus: Gastronomy and Hospitality",
+    //   image: "assets/img/apps/zyppins_haus.png",
+    //   link: "",
+    //   tab: "Web",
+    //   caption: "In Angular -",
+    //   isFull: true,
+    //   inDevelopment: true,
+    //   background: "#3CE79F"
+    // }
+
     {
       name: "Inframan: IIoT Devices Management",
       image: "assets/img/clients/inframan.jpg",
       link: "https://www.linkedin.com/posts/narz_audako-inframan-unsere-l%C3%B6sung-f%C3%BCr-smarte-activity-7267834202534920194-hTNJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXbLc0Bkn493tLHsy0mxwhT8Kh1QbwWwTM",
-      color: "#FFFFFF"
-    },
-    {
-      name: "audako: Modern Process Control System",
-      image: "assets/img/clients/audako.jpg",
-      link: "https://www.narz.net/leistungen/audako-plattform",
-    },
-    {
-      name: "License Manager: License Management for Software",
-    },
-  ];
-
-  myApps: AppType[] = [
-    {
-      name: "Licendra: Enterprise Multitenant Licensing",
-      image: "assets/img/apps/licendra_com.png",
-      link: "",
       tab: "Web and Android",
-      caption: "In Angular & Ionic -",
+      caption: "In Angular -",
       isFull: false,
-      inDevelopment: true,
       primary: "#3FD67D",
+      showShadow: true,
       background: "#E1E1E1"
     },
     {
-      name: "LLems: AI Powered Trading Bot",
-      image: "assets/img/apps/llems_net.png",
-      link: "",
+      name: "audako: Modern Process Control System",
+      image: "assets/img/clients/audako2.png",
+      link: "https://www.narz.net/leistungen/audako-plattform",
       tab: "Android",
       isFull: false,
-      inDevelopment: true,
-      caption: "In Flutter -",
+      caption: "In Angular -",
+      showShadow: true,
       background: "#F5E7B4"
     },
     {
-      name: "Zyppins  Haus: Gastronomy and Hospitality",
-      image: "assets/img/apps/zyppins_haus.png",
+      name: "IIoT Configurator: Full Stack IIoT Solution",
+      image: "assets/img/clients/iot.jpg",
       link: "",
       tab: "Web",
-      caption: "In Angular -",
+      caption: "In Angular & NestJS -",
       isFull: true,
-      inDevelopment: true,
+      showShadow: true,
+      isInternal: true,
       background: "#3CE79F"
     }
   ];

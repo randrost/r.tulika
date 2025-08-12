@@ -1,4 +1,5 @@
 <a class="main tb-position--relative unlink" ngClass.xs="xs" ngClass.sm="sm" [href]="_mAppUrl" target="_blank"
+   (click)="!_mAppUrl ? $event.preventDefault() : null"
    fxLayout="column" #animRefView>
   <div class="background"></div>
 
@@ -18,6 +19,16 @@
           </span>
         </div>
       }
+
+      <!--@if (_mImage?.length > 1) {-->
+      <div class="arrow-back" (click)="prevImage()">
+        <mat-icon fontIcon="chevron_left"></mat-icon>
+      </div>
+
+      <div class="arrow-next" (click)="nextImage()">
+        <mat-icon fontIcon="chevron_right"></mat-icon>
+      </div>
+      <!--}-->
     </div>
   </div>
 </a>
