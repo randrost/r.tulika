@@ -154,6 +154,7 @@
     "no-image": "Kein Bild verfügbar."
   },
   "misc": {
-    "coming-soon": "Bald verfügbar"
+    "coming-soon": "Bald verfügbar",
+    "internal": "Interne Software"
   }
 }

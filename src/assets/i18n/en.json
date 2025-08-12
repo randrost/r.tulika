@@ -157,6 +157,7 @@
     "no-image": "No image is available yet."
   },
   "misc": {
-    "coming-soon": "Coming Soon"
+    "coming-soon": "Coming Soon",
+    "internal": "Internal Software"
   }
 }
