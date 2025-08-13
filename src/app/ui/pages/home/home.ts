@@ -18,7 +18,6 @@ import {FlexLayoutServerModule} from "ng-flex-layout/server";
     Footer,
     HomeContact,
     HomeExpertise,
-    HomePlatforms,
     HomeShowcases,
     HomeAbout,
     HomeTop,
