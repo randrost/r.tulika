@@ -1,8 +1,9 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {RouterOutlet} from "@angular/router";
 import {TranslateService} from "@ngx-translate/core";
+import {Title, Meta} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +12,28 @@ import {TranslateService} from "@ngx-translate/core";
   imports: [RouterOutlet],
   standalone: true
 })
-export class App {
+export class App implements OnInit {
   private translate = inject(TranslateService);
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private titleService: Title, private metaService: Meta) {
     this.addSvgIcons(iconRegistry, sanitizer);
     this.translate.addLangs(['de', 'en', 'ua']);
     this.translate.setFallbackLang('en');
     this.translate.use('en');
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle("Tulika's Labs");
+    this.metaService.addTags([
+      {
+        name: 'description',
+        content: "Tulika's Labs is a set of projects and apps that showcase my skills and creativity. Explore my portfolio to see the work I've done, including web applications."
+      },
+      {
+        name: 'keywords',
+        content: "tulika, tulika labs, tulika labs portfolio, tulika portfolio, tulika's labs, tulika's portfolio, tulika's projects, tulika's apps, tulika's work, tulika's showcase"
+      },
+    ]);
   }
 
   addSvgIcons(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
