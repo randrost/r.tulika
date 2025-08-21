@@ -1,9 +1,9 @@
 ![A preview](https://github.com/nirajprakash/nirajprakash.github.io/blob/main/images/banner.png)
 
 # Personal Portfolio 
-> [nirajprakash.github.io/](https://nirajprakash.github.io/)
+> [r-tulika.licendra.com/](https://r-tulika.licendra.com/)
 
-- **Framework**: [Angular14](https://angular.io/)
+- **Framework**: [Angular 20](https://angular.io/)
 - **Styling**: [SCSS](https://sass-lang.com/)
 - **Theme**: [Angular Material](https://material.angular.io/)
 
@@ -26,8 +26,8 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/nirajprakash/nirajprakash.github.io.git
-$ cd braydoncoyer.dev
+$ git clone https://github.com/randtost/r.tulika.git
+$ cd r-tulika
 $ npm install
 $ ng serve
 ```
