@@ -26,7 +26,7 @@
             "text": "Lösungen & Produkten"
           }
         ],
-        "subtitle": "Ich bin ein Softwareentwickler mit Erfahrung in der Erstellung von Web-Produkten. Ich habe IloT-Plattformen und Prozessleitsysteme entwickelt und die Benutzeroberflächen sowie die Benutzererfahrung mit Technologien wie Angular JS, Angular Material und Material Design 3 verbessert."
+        "subtitle": "Ich bin ein Softwareentwickler mit Erfahrung in der Erstellung von Web-Produkten. Ich habe IloT-Plattformen und Prozessleitsysteme entwickelt und die Benutzeroberflächen sowie die Benutzererfahrung mit Technologien wie Angular, Angular Material und Material Design 3 verbessert."
       },
       "about": {
         "title": "Über mich",
@@ -71,7 +71,7 @@
             },
             {
               "color": "#A289FF",
-              "text": "AngularJS",
+              "text": "Angular",
               "textClass": "tb-color--white"
             },
             {
@@ -99,7 +99,7 @@
         "expertise": [
           {
             "jobType": "Web-Entwicklung",
-            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "parts": ["Angular", "Angular Material", "RxJS", "Tailwind CSS"],
             "isColored": "true"
           },
           {

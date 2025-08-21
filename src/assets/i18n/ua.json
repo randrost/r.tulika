@@ -23,7 +23,7 @@
             "text": "рішення та продукти"
           }
         ],
-        "subtitle": "Я розробник програмного забезпечення з досвідом створення веб-продуктів. Розробляв платформи IloT та системи керування процесами, а також покращував інтерфейси та досвід користувачів за допомогою таких технологій, як Angular JS, Angular Material та Material Design 3."
+        "subtitle": "Я розробник програмного забезпечення з досвідом створення веб-продуктів. Розробляв платформи IloT та системи керування процесами, а також покращував інтерфейси та досвід користувачів за допомогою таких технологій, як Angular, Angular Material та Material Design 3."
       },
       "about": {
         "title": "Про мене",
@@ -68,7 +68,7 @@
             },
             {
               "color": "#A289FF",
-              "text": "AngularJS",
+              "text": "Angular",
               "textClass": "tb-color--white"
             },
             {
@@ -96,7 +96,7 @@
         "expertise": [
           {
             "jobType": "Веб-розробка",
-            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "parts": ["Angular", "Angular Material", "RxJS", "Tailwind CSS"],
             "isColored": "true"
           },
           {

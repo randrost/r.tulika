@@ -75,7 +75,7 @@ export class HomeShowcases implements AfterViewInit {
   //   },
   // ];
 
-  myApps: AppType[] = [
+  contributedApps: AppType[] = [
     // {
     //   name: "Licendra: Enterprise Multitenant Licensing",
     //   image: "assets/img/apps/licendra_com.png",
@@ -130,7 +130,7 @@ export class HomeShowcases implements AfterViewInit {
       background: "#F5E7B4"
     },
     {
-      name: "IIoT Configurator: Full Stack IIoT Solution",
+      name: "IIoT Configurator: Full Stack IIoT Configuration and Diagnnosis Solution",
       image: "assets/img/clients/iot.jpg",
       link: "",
       tab: "Web",
@@ -139,6 +139,19 @@ export class HomeShowcases implements AfterViewInit {
       showShadow: true,
       isInternal: true,
       background: "#3CE79F"
+    }
+  ];
+
+  myApps: AppType[] = [
+    {
+      name: "Kitchensink: Features and Skills showcase app",
+      image: "assets/img/apps/kitchensink.png",
+      link: "https://kitchensink.licendra.com",
+      tab: "Web",
+      caption: "In Angular -",
+      isFull: true,
+      showShadow: true,
+      background: "#64aedc"
     }
   ];
 

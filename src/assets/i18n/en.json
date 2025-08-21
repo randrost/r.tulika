@@ -26,7 +26,7 @@
             "text": "solutions & products"
           }
         ],
-        "subtitle": "I’m an Software Developer with experience in creating products for web. I have developed an IloT platforms and a process control systems, and have improved user interfaces and user experience using technologies like Angular JS, Angular Material, and Material Design 3."
+        "subtitle": "I’m an Software Developer with experience in creating products for web. I have developed an IloT platforms and a process control systems, and have improved user interfaces and user experience using technologies like Angular, Angular Material, and Material Design 3."
       },
       "about": {
         "title": "About Me.",
@@ -71,7 +71,7 @@
             },
             {
               "color": "#A289FF",
-              "text": "AngularJS",
+              "text": "Angular",
               "textClass": "tb-color--white"
             },
             {
@@ -99,7 +99,7 @@
         "expertise": [
           {
             "jobType": "Web Development",
-            "parts": ["AngularJS", "Angular Material", "RxJS", "Tailwind CSS"],
+            "parts": ["Angular", "Angular Material", "RxJS", "Tailwind CSS"],
             "isColored": "true"
           },
           {
