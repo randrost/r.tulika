@@ -1,0 +1,67 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: r-tulika
+  namespace: ci-cd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: r-tulika
+  template:
+    metadata:
+      labels:
+        app: r-tulika
+    spec:
+      containers:
+        - name: r-tulika
+          image: registry.licendra.com/r-tulika:latest
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: r-tulika
+  namespace: ci-cd
+spec:
+  selector:
+    app: r-tulika
+  ports:
+    - port: 80
+      targetPort: 4000
+      protocol: TCP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: r-tulika
+  namespace: ci-cd
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/proxy-cache-key: "$scheme$request_method$host$request_uri"
+    nginx.ingress.kubernetes.io/proxy-cache-use-stale: "error timeout updating http_500 http_502 http_503 http_504"
+    nginx.ingress.kubernetes.io/proxy-cache-revalidate: "on"
+    nginx.ingress.kubernetes.io/proxy-cache-bypass: "$http_cache_control"
+    nginx.ingress.kubernetes.io/proxy-cache: "true"
+    nginx.ingress.kubernetes.io/proxy-cache-valid: "200 302 10m"
+spec:
+  tls:
+    - hosts:
+        - r-tulika.licendra.com
+      secretName: r-tulika-tls
+  rules:
+    - host: r-tulika.licendra.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: r-tulika
+                port:
+                  number: 80
