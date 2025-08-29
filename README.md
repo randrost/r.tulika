@@ -34,8 +34,6 @@ This project is based on the original portfolio by [**Niraj Prakash**](https://g
 - [ ] Add more content to the portfolio
 - [ ] Make dialog success and progress components finished
 
-## Project Overview
-
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
