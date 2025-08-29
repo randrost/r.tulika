@@ -1,7 +1,7 @@
 ![A preview](https://github.com/nirajprakash/nirajprakash.github.io/blob/main/images/banner.png)
 
 # Personal Portfolio 
-> [r-tulika.me/](https://r-tulika.me/)
+> [LIVE: r-tulika.me](https://r-tulika.me/)
 
 - **Framework**: [Angular 20](https://angular.io/)
 - **Styling**: [SCSS](https://sass-lang.com/)
