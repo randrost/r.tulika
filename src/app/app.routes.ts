@@ -10,6 +10,11 @@ export const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('./ui/pages/home/home.routes').then((m) => m.homeRoutes),
+      },
+      {
+        path: 'imprint-and-privacy',
+        loadComponent: () =>
+          import('./ui/pages/imprint-and-privacy/imprint-and-privacy').then((m) => m.ImprintAndPrivacy),
       }
     ]
   },

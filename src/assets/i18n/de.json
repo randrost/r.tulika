@@ -99,25 +99,51 @@
         "expertise": [
           {
             "jobType": "Web-Entwicklung",
-            "parts": ["Angular", "Angular Material", "RxJS", "Tailwind CSS"],
+            "parts": [
+              "Angular",
+              "Angular Material",
+              "RxJS",
+              "Tailwind CSS"
+            ],
             "isColored": "true"
           },
           {
             "jobType": "Backend-Entwicklung",
-            "parts": ["NestJS", "Node.js", "Express.js", "MongoDB", "Microservices", "Spring Boot", "Java", "TypeScript", ".NET"]
+            "parts": [
+              "NestJS",
+              "Node.js",
+              "Express.js",
+              "MongoDB",
+              "Microservices",
+              "Spring Boot",
+              "Java",
+              "TypeScript",
+              ".NET"
+            ]
           },
           {
             "jobType": "Design",
-            "parts": ["UI/UX", "Material Design 3", "Style Guides"],
+            "parts": [
+              "UI/UX",
+              "Material Design 3",
+              "Style Guides"
+            ],
             "isColored": "true"
           },
           {
             "jobType": "Mobile Entwicklung",
-            "parts": ["Flutter", "Ionic"]
+            "parts": [
+              "Flutter",
+              "Ionic"
+            ]
           },
           {
             "jobType": "DevOps",
-            "parts": ["Docker", "Jenkins", "Rancher"]
+            "parts": [
+              "Docker",
+              "Jenkins",
+              "Rancher"
+            ]
           }
         ]
       },
@@ -142,6 +168,8 @@
     "footer": {
       "original": "Ursprünglich entworfen und entwickelt von",
       "reworked": "Überarbeitet, aktualisiert und gepflegt unter Verwendung bewährter Verfahren von",
+      "imprint-and-privacy": "Impressum & Datenschutz",
+      "navigate-to-imprint": "Zum Impressum & Datenschutz navigieren",
       "designed-in": "Entworfen in",
       "built-with": "Erstellt mit",
       "icons": "Icons",
@@ -156,5 +184,8 @@
   "misc": {
     "coming-soon": "Bald verfügbar",
     "internal": "Interne Software"
+  },
+  "imprint-and-privacy": {
+    "main-text": "## Impressum\n\n**Angaben gemäß § 5 TMG**\n\nRostyslav Tulika (Privat)  \nHessenstraße 45  \n36358 Herbstein  \nDeutschland  \n\nTelefon: +49 123 456789  \nE-Mail: [rostik.tulika@gmail.com](mailto:rostik.tulika@gmail.com)  \n\n---\n\n### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:\n\nRostyslav Tulika  \n(Hessenstraße 45, 36358 Herbstein)  \n\n---\n\n### Haftungsausschluss\n\n**Haftung für Inhalte**  \nDie Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen.  \n\n**Haftung für Links**  \nDiese Website kann Links zu externen Webseiten Dritter enthalten, auf deren Inhalte kein Einfluss besteht. Für diese fremden Inhalte wird keine Gewähr übernommen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.  \n\n---\n\n### Urheberrecht\n\nDie auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Eine Vervielfältigung, Bearbeitung, Verbreitung oder jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.  \n\n---\n\n## Datenschutzerklärung\n\n**Datenschutz**  \nDer Schutz Ihrer persönlichen Daten ist mir wichtig. Die Nutzung dieser Website ist in der Regel ohne Angabe personenbezogener Daten möglich.  \n\n---\n\n### 1. Verantwortlicher\n\nRostyslav Tulika  \nHessenstraße 45  \n36358 Herbstein  \nE-Mail: [rostik.tulika@gmail.com](mailto:rostik.tulika@gmail.com)  \n\n---\n\n### 2. Erhebung und Speicherung personenbezogener Daten\n\n* Beim Besuch dieser Website werden automatisch Informationen durch den Hosting-Provider erfasst (sogenannte Server-Logfiles). Dazu gehören:  \n\n* IP-Adresse  \n* Datum und Uhrzeit der Anfrage  \n* aufgerufene Seite/Datei  \n* Browsertyp & -version  \n* Betriebssystem  \n* Referrer-URL  \n\nDiese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.  \n\n---\n\n### 3. Google Fonts\n\nDiese Website verwendet Google Fonts, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.  \nBeim Aufruf einer Seite lädt Ihr Browser die benötigten Schriftarten direkt von Google-Servern, um Texte und Schriftarten korrekt darzustellen. Dabei wird Ihre IP-Adresse an Google übermittelt.  \n\nWeitere Informationen finden Sie in der Datenschutzerklärung von Google:  \nhttps://policies.google.com/privacy  \n\nDie Nutzung von Google Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung dieser Website.  \n\n---\n\n### 4. Cookies & Analyse\n\nDiese Website verwendet **keine Cookies und kein Tracking** (z. B. Google Analytics), sofern Sie dies nicht nachträglich einbauen.  \n\n---\n\n### 5. Kontaktaufnahme\n\nWenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben nur zur Bearbeitung Ihrer Anfrage gespeichert und nicht ohne Ihre Einwilligung weitergegeben.  \n\n---\n\n### 6. Ihre Rechte\n\nSie haben jederzeit das Recht auf:  \n\n* Auskunft über Ihre gespeicherten Daten  \n* Berichtigung, Löschung oder Einschränkung der Verarbeitung  \n* Widerspruch gegen die Verarbeitung  \n* Datenübertragbarkeit  \n\n---\n\n### 7. Hosting\n\nDie Website wird bei einem externen Dienstleister gehostet. Dieser ist vertraglich zur Einhaltung der DSGVO verpflichtet.  \n\n---\n\n### 8. Änderung der Datenschutzerklärung\n\nIch behalte mir vor, diese Datenschutzerklärung anzupassen, falls Änderungen an der Website oder rechtliche Vorgaben dies erforderlich machen.  \n"
   }
 }
