@@ -15,7 +15,13 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Jenkins automatically checked out the repo
+                    def apiKey = credentials('MY_API_KEY_CREDENTIAL_ID')
+                    writeFile file: 'src/environments/environment.prod.ts', text: """
+                      export const environment = {
+                        production: true,
+                        apiKey: "${apiKey}"
+                      };
+                    """
                     dockerImage = docker.build("${REGISTRY}/${IMAGE_NAME}:${env.BUILD_NUMBER}")
                 }
             }
