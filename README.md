@@ -23,6 +23,7 @@ This project is based on the original portfolio by [**Niraj Prakash**](https://g
 - [x] Added multilingual support (English, Ukrainian, German)
 - [x] Add kubectl deployment scripts
 - [x] Add Dockerfile for containerization
+- [x] Add Impressum and Privacy Policy pages
 
 ## To-Do List
 - [ ] Add endpoint for contact form
