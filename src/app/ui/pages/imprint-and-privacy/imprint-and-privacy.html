@@ -1,0 +1,18 @@
+<div class="tb-height--56"></div>
+<div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
+
+<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+  <div class="tb-container tb-position--relative container">
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+      <div fxLayout="row" fxLayout.xs="column">
+        <div [fxFlexOrder]='1' [fxFlexOrder.xs]="2" fxFlex fxFlex.xs="none" fxFlex.sm="70" fxLayout="column">
+          <p
+            class="current-typo--body1-medium tb-color--black-54">
+            <markdown [data]="'imprint-and-privacy.main-text' | translate"></markdown>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
