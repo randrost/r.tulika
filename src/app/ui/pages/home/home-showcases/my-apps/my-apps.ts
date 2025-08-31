@@ -11,8 +11,6 @@ import {
 } from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
-  ReplaySubject,
-  takeUntil,
   startWith,
   map,
   scan,
@@ -26,7 +24,6 @@ import {TRANSITION_IMAGE_SCALE, TRANSITION_TEXT} from 'src/app/ui/animations/tra
 import {MyappItem} from "./myapp-item/myapp-item";
 import {UiUtilsView} from "../../../../../core/utils/views.utils";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
-import {TranslatePipe} from "@ngx-translate/core";
 import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 
 @Component({
@@ -41,7 +38,6 @@ import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
     MyappItem,
     FlexLayoutModule,
     FlexLayoutServerModule,
-    TranslatePipe
   ],
   standalone: true
 })
