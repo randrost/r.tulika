@@ -3,7 +3,7 @@
   <div class="footer tb-container tb-position--relative" fxLayout="column">
     <div class="tb-height--48"></div>
 
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="start center" fxLayoutGap.lt-md="12px">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="start start" fxLayoutGap.lt-md="12px">
       <div class="company" fxFlex fxFlex.lt-md="none" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="12px">
         <h5 class="company-name tb-color--black-38 tb-typo--h5" ngClass.xs="xs">
           {{ 'home.footer.designed-in' | translate }}
@@ -29,14 +29,16 @@
         </h5>
       </div>
 
-<!--      <div class="navigation-area " fxLayout="row">-->
-<!--        <a routerLink="/" class="tb-typo&#45;&#45;button tb-color&#45;&#45;grey-900  tb-padding&#45;&#45;8-16 tb-cursor&#45;&#45;pointer">Icons</a>-->
+      <div class="navigation-area " fxLayout="row">
+        <a routerLink="/imprint-and-privacy" class="tb-typo--button tb-color--grey-900  tb-padding--8-16 tb-cursor--pointer" [matTooltip]="'home.footer.navigate-to-imprint' | translate">
+          {{ 'home.footer.imprint-and-privacy' | translate }}
+        </a>
 <!--        <div ngClass.gt-sm="tb-padding&#45;&#45;h-12" ngClass.lt-md="tb-padding&#45;&#45;h-12"></div>-->
 <!--        <a routerLink="/products/apps" class="tb-typo&#45;&#45;button tb-color&#45;&#45;grey-900  tb-padding&#45;&#45;8-16 tb-cursor&#45;&#45;pointer">Logos</a>-->
 <!--        <div ngClass.gt-sm="tb-padding&#45;&#45;h-12" ngClass.lt-md="tb-padding&#45;&#45;h-12"></div>-->
 <!--        <a routerLink="/products/designs"-->
 <!--           class="tb-typo&#45;&#45;button tb-color&#45;&#45;grey-900  tb-padding&#45;&#45;8-16 tb-cursor&#45;&#45;pointer">Platforms</a>-->
-<!--      </div>-->
+      </div>
     </div>
     <div class="tb-height--56"></div>
 
