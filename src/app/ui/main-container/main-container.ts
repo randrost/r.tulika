@@ -12,6 +12,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {TranslatePipe, TranslateService} from "@ngx-translate/core";
+import {Footer} from "../common/footer/footer";
 
 @Component({
   selector: 'app-main-container',
@@ -20,24 +21,25 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
   animations: [
     ENTER_FORM_TOP
   ],
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-    FlexLayoutServerModule,
-    RouterOutlet,
-    MatRipple,
-    MatSidenavModule,
-    MatToolbarModule,
-    RouterLink,
-    MatButtonModule,
-    MatIconModule,
+    imports: [
+        CommonModule,
+        FlexLayoutModule,
+        FlexLayoutServerModule,
+        RouterOutlet,
+        MatRipple,
+        MatSidenavModule,
+        MatToolbarModule,
+        RouterLink,
+        MatButtonModule,
+        MatIconModule,
 
-    MatMenuTrigger,
-    MatMenu,
-    MatMenuItem,
-    MatTooltipModule,
-    TranslatePipe,
-  ],
+        MatMenuTrigger,
+        MatMenu,
+        MatMenuItem,
+        MatTooltipModule,
+        TranslatePipe,
+        Footer,
+    ],
   standalone: true
 })
 export class MainContainer {

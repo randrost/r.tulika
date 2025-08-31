@@ -67,6 +67,9 @@
       <div class="tb-height--full" fxLayout="column">
         <div fxFlex cdkScrollable class="tb-height--full tb-overflow--auto" id="dashboard-container">
           <router-outlet></router-outlet>
+          <div ngClass.gt-xs="tb-height--48" ngClass.xs="tb-height--12"></div>
+
+          <app-footer></app-footer>
         </div>
       </div>
     </mat-sidenav-content>
