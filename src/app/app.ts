@@ -17,9 +17,17 @@ export class App implements OnInit {
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private titleService: Title, private metaService: Meta) {
     this.addSvgIcons(iconRegistry, sanitizer);
-    this.translate.addLangs(['de', 'en', 'ua']);
-    this.translate.setFallbackLang('en');
-    this.translate.use('en');
+
+    const defLanguages = ['de', 'en', 'ua'];
+
+    this.translate.addLangs(defLanguages);
+    if (defLanguages.includes((this.translate.getBrowserLang())?.split('-')[0] || '')) {
+      this.translate.setFallbackLang(this.translate.getBrowserLang()!.split('-')[0]);
+      this.translate.use(this.translate.getBrowserLang()!.split('-')[0]);
+    } else {
+      this.translate.setFallbackLang('en');
+      this.translate.use('en');
+    }
   }
 
   ngOnInit(): void {
