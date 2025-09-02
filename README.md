@@ -14,6 +14,9 @@ This project is based on the original portfolio by [**Niraj Prakash**](https://g
 - **Author**: [Rostyslav Tulika](https://github.com/randtost).
 - **Author of the original project**: [Niraj Prakash](https://github.com/nirajprakash).
 
+This project contains code from [Niraj Prakash's repository](https://github.com/nirajprakash/nirajprakash.github.io), licensed under the MIT License (see LICENSE.MIT).
+All other code is © 2025 Rostyslav Tulika, All Rights Reserved.
+
 ## Changes made by me
 - [x] Update Angular 14 to Angular 20
 - [x] Update Angular Material to the latest version
