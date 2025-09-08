@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: r-tulika
-          image: registry.licendra.com/r-tulika:latest
+          image: registry.me/r-tulika:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
       imagePullSecrets:
         - name: regcred
 ---
@@ -32,7 +32,7 @@ spec:
     app: r-tulika
   ports:
     - port: 80
-      targetPort: 4000
+      targetPort: 80
       protocol: TCP
 ---
 apiVersion: networking.k8s.io/v1
@@ -52,10 +52,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - r-tulika.licendra.com
+        - r-tulika.me
       secretName: r-tulika-tls
   rules:
-    - host: r-tulika.licendra.com
+    - host: r-tulika.me
       http:
         paths:
           - path: /
