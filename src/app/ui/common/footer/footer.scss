@@ -50,19 +50,6 @@
   left: 0;
 }
 
-// .social {
-//   position: absolute;
-//   top: 0;
-//   right: 32px;
-// }
-.main {
-  &.xs {
-    .social {
-      position: absolute;
-      bottom: 58px;
-    }
-  }
-}
 
 .tb-typo--h2 {
   font-size: 4rem !important;

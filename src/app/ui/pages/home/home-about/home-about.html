@@ -36,7 +36,7 @@
 
           <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
 
-          <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:400}}" fxLayout="row wrap" fxLayoutGap="6">
+          <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:400}}" class="skill-container">
             @for (skill of skillsFirstRow(); track $index) {
               <app-skill [skill]="skill"></app-skill>
             }
@@ -44,7 +44,7 @@
 
           <div class="tb-height--8"></div>
 
-          <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:500}}" fxLayout="row wrap" fxLayoutGap="6">
+          <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:500}}" class="skill-container">
             @for (skill of skillsSecondRow(); track $index) {
               <app-skill [skill]="skill"></app-skill>
             }

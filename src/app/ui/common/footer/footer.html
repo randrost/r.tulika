@@ -1,11 +1,11 @@
 <div [@transitionReveal]="{value:_mTriggerAnim, params: {animDelay: 500}}"
-     class="main tb-position--relative tb-overflow--hidden" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
-  <div class="footer tb-container tb-position--relative" fxLayout="column">
+     class="main tb-position--relative tb-overflow--hidden" #animRefView>
+  <div class="footer tb-container tb-layout-content tb-position--relative" fxLayout="column">
     <div class="tb-height--48"></div>
 
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="start start" fxLayoutGap.lt-md="12px">
-      <div class="company" fxFlex fxFlex.lt-md="none" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="12px">
-        <h5 class="company-name tb-color--black-38 tb-typo--h5" ngClass.xs="xs">
+    <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="12px">
+      <div class="company" fxFlex fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="12px">
+        <h5 class="company-name tb-color--black-38 tb-typo--h5">
           {{ 'home.footer.designed-in' | translate }}
           <span class="tb-color--black">
             Figma.
@@ -15,13 +15,13 @@
             Angular.
           </span>
         </h5>
-        <h5 class="company-name tb-color--black-38 tb-typo--h5" ngClass.xs="xs">
+        <h5 class="company-name tb-color--black-38 tb-typo--h5">
           {{ 'home.footer.reworked' | translate }}
           <a class="tb-color--black" href="https://www.linkedin.com/in/rostyslav-tulika-1515b8288/">
             Rostyslav Tulika.
           </a>
         </h5>
-        <h5 class="company-name tb-color--black-38 tb-typo--h5" ngClass.xs="xs">
+        <h5 class="company-name tb-color--black-38 tb-typo--h5">
           {{ 'home.footer.original' | translate }}
           <a class="tb-color--black" href="https://www.linkedin.com/in/nirajprakash1/">
             Niraj Prakash.
@@ -48,8 +48,8 @@
       </p>
       <div fxFlex></div>
       <div class="social-area" fxLayoutGap="40px" fxLayout="row" fxLayoutAlign="center center">
-        <div class="social" fxLayoutGap="40px" fxLayout="row" fxLayoutAlign="center center"
-             fxLayoutAlign.lt-sm="end end">
+        <div class="social" fxLayoutGap="40px" fxLayout="row"
+             fxLayoutAlign="end end">
           <a class="" href="https://github.com/randrost" target="_blank" matTooltip="Github">
             <button mat-icon-button>
               <mat-icon svgIcon="github" class="tb-icon--16 tb-color--grey-500"></mat-icon>
