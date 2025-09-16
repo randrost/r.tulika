@@ -146,7 +146,7 @@ export class HomeShowcases implements AfterViewInit {
     {
       name: "Kitchensink: Features and Skills showcase app",
       image: "assets/img/apps/kitchensink.png",
-      link: "https://kitchensink.licendra.com",
+      link: "https://kitchensink.r-tulika.me",
       tab: "Web",
       caption: "In Angular -",
       isFull: true,
