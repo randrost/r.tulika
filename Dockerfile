@@ -29,7 +29,7 @@ FROM nginx:alpine
 COPY --from=builder /app/docs/browser /usr/share/nginx/html
 
 # Nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 COPY robots.txt /usr/share/nginx/html/robots.txt
 COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
