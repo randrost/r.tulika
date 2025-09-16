@@ -27,6 +27,10 @@ FROM nginx:alpine
 # Copy the built Angular application from the builder stage to the Nginx server's root directory.
 # This will serve the static files directly from Nginx.
 COPY --from=builder /app/docs/browser /usr/share/nginx/html
+
+COPY --from=builder /app/robots.txt /usr/share/nginx/html/robots.txt
+COPY --from=builder /app/sitemap.xml /usr/share/nginx/html/sitemap.xml
+
 # Expose port 80 to allow external access to the Nginx server.
 EXPOSE 80
 # Start Nginx in the foreground to keep the container running.
