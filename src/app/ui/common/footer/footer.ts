@@ -1,5 +1,5 @@
 import {ScrollDispatcher, ViewportRuler} from '@angular/cdk/scrolling';
-import {AfterViewInit, ChangeDetectorRef, Component, DestroyRef, ElementRef, inject, NgZone, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, DestroyRef, ElementRef, inject, NgZone, ViewChild, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
   distinctUntilChanged,
@@ -11,7 +11,7 @@ import {
   takeWhile
 } from 'rxjs';
 import {TRANSITION_REVEAL} from '../../animations/transitions/transitions.constants';
-import {CommonModule} from "@angular/common";
+
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {RouterModule} from "@angular/router";
@@ -29,7 +29,6 @@ import {TranslatePipe} from "@ngx-translate/core";
     TRANSITION_REVEAL
   ],
   imports: [
-    CommonModule,
     FlexLayoutModule,
     FlexLayoutServerModule,
     MatButtonModule,
@@ -37,7 +36,8 @@ import {TranslatePipe} from "@ngx-translate/core";
     RouterModule,
     MatTooltipModule,
     TranslatePipe
-  ],
+],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class Footer implements AfterViewInit {

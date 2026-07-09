@@ -1,4 +1,4 @@
-import {Component, ElementRef, inject, OnInit, signal, WritableSignal} from '@angular/core';
+import {Component, ElementRef, inject, OnInit, signal, WritableSignal, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
   ENTER_SCALE,
@@ -22,6 +22,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
     FlexLayoutServerModule,
     TranslatePipe
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class HomeTop implements OnInit {

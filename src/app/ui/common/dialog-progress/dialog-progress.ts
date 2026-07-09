@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import {CommonModule} from "@angular/common";
+
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {FlexLayoutModule} from "ng-flex-layout";
@@ -12,12 +12,12 @@ import {FlexLayoutServerModule} from "ng-flex-layout/server";
   templateUrl: './dialog-progress.html',
   styleUrls: ['./dialog-progress.scss'],
   imports: [
-    CommonModule,
     MatIconModule,
     MatProgressSpinnerModule,
     FlexLayoutModule,
     FlexLayoutServerModule
-  ],
+],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true,
 })
 export class DialogProgress implements OnInit {

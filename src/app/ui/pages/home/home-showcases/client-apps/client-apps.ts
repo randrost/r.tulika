@@ -6,7 +6,8 @@ import {
   ElementRef,
   inject, input,
   NgZone,
-  ViewChild
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
@@ -41,6 +42,7 @@ import {AppItem, AppItemType} from "./app-item/app-item";
     MatTooltipModule,
     TranslatePipe,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class ClientApps implements AfterViewInit {

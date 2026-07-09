@@ -2,7 +2,7 @@ import {ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChange
 import {provideRouter, withInMemoryScrolling} from '@angular/router';
 import {routes} from './app.routes';
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
-import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClient, withXhr} from "@angular/common/http";
 import {provideTranslateService} from "@ngx-translate/core";
 import {provideTranslateHttpLoader} from "@ngx-translate/http-loader";
 import {provideMarkdown} from "ngx-markdown";
@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withInMemoryScrolling({
       scrollPositionRestoration: 'top', // scrolls to top
     })),
-    provideHttpClient(),
+    provideHttpClient(withXhr()),
     provideAnimationsAsync(),
     // provideClientHydration(withEventReplay()),
     provideMarkdown(),

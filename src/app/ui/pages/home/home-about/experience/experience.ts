@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, input, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from "ng-flex-layout";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
 
@@ -6,6 +6,7 @@ import {FlexLayoutServerModule} from "ng-flex-layout/server";
   selector: 'app-experience',
   imports: [FlexLayoutModule, FlexLayoutServerModule],
   templateUrl: './experience.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './experience.scss'
 })
 export class Experience {

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from "ng-flex-layout";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
 
@@ -10,6 +10,7 @@ import {FlexLayoutServerModule} from "ng-flex-layout/server";
     FlexLayoutModule,
     FlexLayoutServerModule
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class ExpertiseItem {

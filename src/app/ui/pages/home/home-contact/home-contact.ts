@@ -7,7 +7,8 @@ import {
   ElementRef,
   inject,
   NgZone,
-  ViewChild
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FormBuilder, FormGroup, NgForm, ReactiveFormsModule, Validators} from '@angular/forms';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
@@ -44,6 +45,7 @@ import {TranslatePipe} from "@ngx-translate/core";
     MatButtonModule,
     TranslatePipe
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true,
 })
 export class HomeContact implements AfterViewInit {

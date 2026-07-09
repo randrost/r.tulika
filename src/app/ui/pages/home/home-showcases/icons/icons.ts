@@ -6,7 +6,8 @@ import {
   ElementRef,
   inject,
   NgZone,
-  ViewChild
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {MediaObserver, MediaChange, FlexLayoutModule} from 'ng-flex-layout';
 import {
@@ -35,6 +36,7 @@ import {UiUtilsView} from "../../../../../core/utils/views.utils";
     FlexLayoutModule,
     FlexLayoutServerModule,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class Icons implements AfterViewInit {

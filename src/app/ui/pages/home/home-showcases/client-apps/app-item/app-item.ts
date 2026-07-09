@@ -1,4 +1,4 @@
-import {Component, ElementRef, inject, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, inject, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from "ng-flex-layout";
 import {FlexLayoutServerModule} from "ng-flex-layout/server";
 import {UiUtilsColor} from "../../../../../../core/utils/color.utils";
@@ -15,6 +15,7 @@ import {MatIcon} from "@angular/material/icon";
     TranslatePipe,
     MatIcon,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class AppItem implements OnInit {

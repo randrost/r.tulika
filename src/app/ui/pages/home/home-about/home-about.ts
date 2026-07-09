@@ -6,7 +6,8 @@ import {
   ElementRef,
   inject,
   NgZone, OnInit, signal,
-  ViewChild, WritableSignal
+  ViewChild, WritableSignal,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FlexLayoutModule,} from 'ng-flex-layout';
 import {
@@ -45,6 +46,7 @@ import {Experience, ExperienceType} from "./experience/experience";
     ENTER_SCALE
   ],
   imports: [FlexLayoutModule, FlexLayoutServerModule, MatButtonModule,  TranslatePipe, MatTooltip, Skill, MarkdownComponent, Experience],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class HomeAbout implements OnInit, AfterViewInit {

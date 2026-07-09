@@ -7,7 +7,8 @@ import {
   ElementRef,
   inject,
   NgZone,
-  ViewChild
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FlexLayoutModule, MediaChange, MediaObserver} from 'ng-flex-layout';
 import {
@@ -42,6 +43,7 @@ import {AppType} from "../../../../types/apps_type";
     FlexLayoutServerModule,
     TranslatePipe,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class HomeShowcases implements AfterViewInit {

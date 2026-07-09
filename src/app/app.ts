@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {RouterOutlet} from "@angular/router";
@@ -10,6 +10,7 @@ import {Title, Meta} from '@angular/platform-browser';
   templateUrl: './app.html',
   styleUrls: ['./app.scss'],
   imports: [RouterOutlet],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class App implements OnInit {

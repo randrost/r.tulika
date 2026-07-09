@@ -7,7 +7,8 @@ import {
   ElementRef,
   inject, input,
   NgZone,
-  ViewChild
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
@@ -39,6 +40,7 @@ import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
     FlexLayoutModule,
     FlexLayoutServerModule,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class MyApps implements AfterViewInit {

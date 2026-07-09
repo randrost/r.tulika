@@ -1,5 +1,5 @@
 import {ScrollDispatcher, ViewportRuler} from '@angular/cdk/scrolling';
-import {AfterViewInit, ChangeDetectorRef, Component, DestroyRef, ElementRef, inject, NgZone, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, DestroyRef, ElementRef, inject, NgZone, ViewChild, ChangeDetectionStrategy} from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
   startWith,
@@ -34,6 +34,7 @@ import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
     JunkielabsIllustration,
     MatButtonModule,
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class HomePlatforms implements AfterViewInit {

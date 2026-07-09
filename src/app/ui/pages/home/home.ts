@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {HomeContact} from "./home-contact/home-contact";
 import {HomeExpertise} from "./home-expertise/home-expertise";
 import {HomeShowcases} from "./home-showcases/home-showcases";
@@ -21,6 +21,7 @@ import {FlexLayoutServerModule} from "ng-flex-layout/server";
     FlexLayoutModule,
     FlexLayoutServerModule
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true,
 })
 export class Home {

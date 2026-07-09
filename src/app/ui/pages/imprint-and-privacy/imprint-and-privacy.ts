@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {
   DefaultClassDirective,
   DefaultFlexDirective, DefaultFlexOrderDirective,
@@ -21,6 +21,7 @@ import {TranslatePipe} from "@ngx-translate/core";
   ],
   templateUrl: './imprint-and-privacy.html',
   styleUrl: './imprint-and-privacy.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
   preserveWhitespaces: true,
 })
 export class ImprintAndPrivacy {

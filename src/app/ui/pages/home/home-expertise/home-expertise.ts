@@ -7,7 +7,8 @@ import {
   ElementRef,
   inject,
   NgZone, OnInit, signal,
-  ViewChild, WritableSignal
+  ViewChild, WritableSignal,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {FlexLayoutModule} from 'ng-flex-layout';
 import {
@@ -35,6 +36,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
     TRANSITION_IMAGE_SCALE
   ],
   imports: [FlexLayoutModule, FlexLayoutServerModule, ExpertiseItem, TranslatePipe],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class HomeExpertise implements OnInit, AfterViewInit {
