@@ -3,8 +3,9 @@
 # Personal Portfolio 
 > [LIVE: r-tulika.me](https://r-tulika.me/)
 
-- **Framework**: [Angular 20](https://angular.io/)
-- **Styling**: [SCSS](https://sass-lang.com/)
+- **Framework**: [Angular 22](https://angular.io/)
+- **Language**: [TypeScript 6](https://www.typescriptlang.org/)
+- **Styling**: [SCSS](https://sass-lang.com/) + [Tailwind CSS 4](https://tailwindcss.com/)
 - **Theme**: [Angular Material](https://material.angular.io/)
 
 # Credits 📄
@@ -18,9 +19,10 @@ This project contains code from [Niraj Prakash's repository](https://github.com/
 All other code is © 2025 Rostyslav Tulika, All Rights Reserved.
 
 ## Changes made by me
-- [x] Update Angular 14 to Angular 20
+- [x] Update Angular 14 to Angular 22
 - [x] Update Angular Material to the latest version
 - [x] Update all dependencies to the latest versions
+- [x] Migrate to TypeScript 6 and Tailwind CSS 4
 - [x] Refactor code for better readability and maintainability
 - [x] Reworked module structure to standalone components
 - [x] Added multilingual support (English, Ukrainian, German)
@@ -57,6 +59,6 @@ All other code is © 2025 Rostyslav Tulika, All Rights Reserved.
 ```bash
 $ git clone https://github.com/randtost/r.tulika.git
 $ cd r-tulika
-$ npm install
+$ npm install --force
 $ ng serve
 ```
