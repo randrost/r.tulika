@@ -10,7 +10,7 @@
     <div fxLayout.gt-sm="row wrap" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="space-between center"
          fxLayoutAlign.lt-md="start stretch">
       @for (app of apps(); track app) {
-        <app-myapp-item class="tw-mt-4 tw-mx-2"
+        <app-myapp-item class="tw:mt-4 tw:mx-2"
                         [fxFlex.gt-sm]="app.isFull ? 'calc( 100% - 1rem )' : 'calc( 50% - 1rem )'" fxFlex.lt-md="none"
                         [data]="app">
         </app-myapp-item>

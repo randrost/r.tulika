@@ -32,7 +32,8 @@
               "src/documents"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/tailwind.css"
             ],
             "scripts": [],
             "outputMode": "static"
@@ -100,7 +101,8 @@
               "src/documents"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/tailwind.css"
             ],
             "scripts": []
           }

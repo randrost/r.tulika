@@ -1,0 +1,7 @@
+/* Tailwind CSS v4 entry point.
+   Kept in a dedicated .css file (not styles.scss) so Sass does not try to
+   resolve the `@import "tailwindcss"` before PostCSS/Tailwind processes it.
+   The `prefix(tw)` keeps the project's existing `tw`-prefixed utilities. */
+@import "tailwindcss" prefix(tw);
+
+@source "./app/**/*.{html,ts}";
