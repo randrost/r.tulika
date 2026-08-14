@@ -82,7 +82,11 @@
             }
           ]
         },
-        "download-cv-tooltip": "Завантажити резюме"
+        "download-cv-tooltip": "Завантажити резюме",
+        "cv-languages": {
+          "en": "Англійська",
+          "de": "Німецька"
+        }
       },
       "showcases": {
         "title": "Проєкти",

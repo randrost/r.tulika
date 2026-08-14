@@ -54,16 +54,24 @@
 
           <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
                fxLayoutAlign="start center" fxLayoutGap="32">
-            <a class="btn-area-cv"
-               href="assets/docs/CV.pdf"
-               target="_blank">
-              <button mat-raised-button color="primary"
+            <div class="btn-area-cv">
+              <button mat-raised-button color="primary" [matMenuTriggerFor]="cvMenu"
                       [matTooltip]="'home.pages.about.download-cv-tooltip' | translate">
                 <span class="current-typo--button-medium">
                   {{ 'home.pages.about.download-cv-tooltip' | translate }}.
                 </span>
+                <mat-icon iconPositionEnd fontIcon="arrow_drop_down"></mat-icon>
               </button>
-            </a>
+
+              <mat-menu #cvMenu="matMenu">
+                <a mat-menu-item href="assets/docs/CV_Rostyslav_Tulika_EN.pdf" target="_blank">
+                  {{ 'home.pages.about.cv-languages.en' | translate }}
+                </a>
+                <a mat-menu-item href="assets/docs/CV_Rostyslav_Tulika_DE.pdf" target="_blank">
+                  {{ 'home.pages.about.cv-languages.de' | translate }}
+                </a>
+              </mat-menu>
+            </div>
           </div>
         </div>
         <div fxFlex.xs="none" fxFlex [fxFlexOrder.xs]="1" [fxFlexOrder]=' 2' class="image-container"

@@ -85,7 +85,11 @@
             }
           ]
         },
-        "download-cv-tooltip": "CV herunterladen"
+        "download-cv-tooltip": "CV herunterladen",
+        "cv-languages": {
+          "en": "Englisch",
+          "de": "Deutsch"
+        }
       },
       "showcases": {
         "title": "Projekte",

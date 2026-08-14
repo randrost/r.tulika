@@ -31,6 +31,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 import {MatTooltip} from "@angular/material/tooltip";
+import {MatIconModule} from "@angular/material/icon";
+import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 import {MarkdownComponent} from "ngx-markdown";
 import {Skill, SkillType} from "./skill/skill";
 import {Experience, ExperienceType} from "./experience/experience";
@@ -45,7 +47,7 @@ import {Experience, ExperienceType} from "./experience/experience";
     TRANSITION_IMAGE_SCALE,
     ENTER_SCALE
   ],
-  imports: [FlexLayoutModule, FlexLayoutServerModule, MatButtonModule,  TranslatePipe, MatTooltip, Skill, MarkdownComponent, Experience],
+  imports: [FlexLayoutModule, FlexLayoutServerModule, MatButtonModule,  TranslatePipe, MatTooltip, Skill, MarkdownComponent, Experience, MatIconModule, MatMenu, MatMenuItem, MatMenuTrigger],
   changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })

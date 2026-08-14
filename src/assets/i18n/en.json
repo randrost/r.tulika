@@ -85,7 +85,11 @@
             }
           ]
         },
-        "download-cv-tooltip": "Download CV"
+        "download-cv-tooltip": "Download CV",
+        "cv-languages": {
+          "en": "English",
+          "de": "German"
+        }
       },
       "showcases": {
         "title": "Showcases",
