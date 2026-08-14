@@ -3,7 +3,6 @@
     "main-container": {
       "title": "Tulika's Labs",
       "title-tooltip": "Click to go to Tulika's Labs",
-      "kitchen-sink-tooltip": "Click to go to Kitchen Sink",
       "blog-tooltip": "Click to go to Tulika's Blog",
       "language-tooltip": "Click to change language",
       "languages": {

@@ -146,14 +146,24 @@ export class HomeShowcases implements AfterViewInit {
 
   myApps: AppType[] = [
     {
-      name: "Kitchensink: Features and Skills showcase app",
-      image: "assets/img/apps/kitchensink.png",
-      link: "https://kitchensink.r-tulika.me",
+      name: "Elementar RT: Angular UI Components Library",
+      image: "assets/img/apps/elementar_rt.png",
+      link: "https://elementar-rt.r-tulika.me",
       tab: "Web",
-      caption: "In Angular -",
-      isFull: true,
+      caption: "In Angular & Tailwind -",
+      isFull: false,
       showShadow: true,
       background: "#64aedc"
+    },
+    {
+      name: "Elementar RT Admin: Live Demo of Elementar RT",
+      image: "assets/img/apps/elementar_rt_admin.png",
+      link: "https://admin.elementar-rt.r-tulika.me",
+      tab: "Web",
+      caption: "In Angular & Tailwind -",
+      isFull: false,
+      showShadow: true,
+      background: "#7ee0c9"
     }
   ];
 
