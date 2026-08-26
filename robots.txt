@@ -4,4 +4,4 @@ User-agent: *
 Disallow: /
 Disallow: /*
 Disallow: /assets/*
-Sitemap: https://r-tulika.me/sitemap.xml
+Sitemap: https://tulikas.de/sitemap.xml
