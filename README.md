@@ -1,7 +1,7 @@
 ![A preview](https://github.com/nirajprakash/nirajprakash.github.io/blob/main/images/banner.png)
 
 # Personal Portfolio 
-> [LIVE: r-tulika.me](https://r-tulika.me/)
+> [LIVE: r-tulika.me](https://tulikas.de/)
 
 - **Framework**: [Angular 22](https://angular.io/)
 - **Language**: [TypeScript 6](https://www.typescriptlang.org/)
