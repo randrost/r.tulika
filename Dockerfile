@@ -22,7 +22,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Create the production-ready runtime image to serve static files
-FROM nginx:alpine
+FROM nginx:1.31.9-alpine
 
 # Copy the built Angular application from the builder stage to the Nginx server's root directory.
 # This will serve the static files directly from Nginx.
